@@ -8,10 +8,6 @@
 ## Table of Contents
 - [Overview](#overview)  
 - [Folder Structure](#folder-structure)  
-- [How to Use](#how-to-use)  
-- [Contents Summary](#contents-summary)  
-- [Credits & Acknowledgements](#credits--acknowledgements)  
-- [License & Disclaimer](#license--disclaimer)  
 - [Contributing](#contributing)  
 - [Contact](#contact)
 
