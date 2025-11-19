@@ -1,0 +1,18 @@
+1,  how to identify incident
+2,  CIA Triad
+3,  goals and purpose of incident response
+4,  types of computer security incidents
+5,  science of computer incidents
+6,  incident prioritization : risk management 
+7,  impact of virtualization 
+8,  esmination an cost of an incident 
+9,  rols and responsibilities of an incident response team
+10, incident handling process 
+11, realtime log capture and analysis : expected 2-3 differenct tools 
+12, timeline analysis 
+13, malawre handling 
+14, report writting for incident response
+15, reporting format
+16. quality assurance
+
+

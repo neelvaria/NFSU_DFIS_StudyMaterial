@@ -1,0 +1,38 @@
+Computer Artitecture 
+1) Input Device:
+Input unit connects the external environment with internal computer system. It provides data and instructions to the computer system. Commonly used input devices are keyboard, mouse, magnetic tape etc.
+Input unit performs following tasks:
+Accept the data and instructions from the outside environment.
+Convert it into machine language.
+Supply the converted data to computer system
+
+2) Control process unit: It is Central Processing Unit of the computer. The control unit and ALU are together known as CPU. CPU is the brain of computer system. It performs following tasks:
+It performs all operations.
+It takes all decisions.
+It controls all the units of computer.
+
+3) Storage Device:This unit holds the data and instructions. It also stores the intermediate results before these are sent to the output devices. It also stores the data for later use.
+The storage unit of a computer system can be divided into two categories:
+Primary Storage: This memory is used to store the data which is being currently executed. It is used for temporary storage of data. The data is lost, when the computer is switched off. RAM is used as primary storage memory.
+Secondary Storage: The secondary memory is slower and cheaper than primary memory. It is used for permanent storage of data. Commonly used secondary memory devices are hard disk, CD etc.
+
+4)Output Device:It connects the internal system of a computer to the external environment. It provides the results of any computation, or instructions to the outside world. Some output devices are printers, monitor etc.
+
+Secondary Storage device
+SSDs:
+SSD, short for Solid State Drive, is a storage device that uses integrated circuit assemblies as memory to store data. It is composed of a control unit, a storage unit (NAND Flash chip or DRAM chip), an optional cache (or buffer) unit, and an interface.
+
+SSDs Tyes: SSDs can be classified Two Factor memory chip and interface
+DRAM based SSDs and Flash Based SSDs
+
+Advantages of SSDs compare to HDDs:
+faster speed
+less heat production 
+no noice 
+wide range of working temprature 
+easy to carry 
+
+Disadvantages:
+the SSDs is much more expansive 
+Capacity
+Flash SSDs have limited weite Cycle  

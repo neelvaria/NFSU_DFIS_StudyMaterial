@@ -1,0 +1,13 @@
+1.	Write the syntax of conditional function in python with an example?
+2.	Write any 5 basic python commands syntax with examples?
+3.	What is the importance of python and writing the variable of python scripting?
+4.	Explain exception handling file I/O?
+5.	Write the difference between Blacklists and Whitelists?
+6.	Explain the python selection with an example?
+7.	Explain Acquiring Images from Disk
+8.	Describe Mathematical and logical operations in python?
+9       What is the Network and write the python syntax for network connection with example?
+10      Explain String, Lists, and Dictionaries with examples?
+11      Explain Geolocation Acquisition?
+12      Explain Image Forensics and PIL?
+
