@@ -1,0 +1,11 @@
+Parsed Plugins file.
+Launching auditpol v.20190510
+auditpol complete.
+Launching auditpol_xp v.20121128
+auditpol_xp complete.
+Launching lsasecrets v.20140408
+lsasecrets complete.
+Launching polacdms v.20100531
+polacdms complete.
+Launching secrets v.20140730
+secrets complete.

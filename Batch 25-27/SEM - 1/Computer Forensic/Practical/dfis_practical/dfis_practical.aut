@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>6.0</SchemaVersion>
+  <CreatedDate>2025/12/23 15:19:37 (IST)</CreatedDate>
+  <ModifiedDate>2025/12/23 15:19:39 (IST)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.22.1</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.22.1</SavedByAutopsyVersion>
+  <Case>
+    <Name>dfis_practical_20251223_151937</Name>
+    <DisplayName>dfis_practical</DisplayName>
+    <Number>102</Number>
+    <Examiner>Varia Neel</Examiner>
+    <ExaminerPhone>9876512345</ExaminerPhone>
+    <ExaminerEmail/>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+  <ContentProvider>
+    <Name/>
+  </ContentProvider>
+  <OriginalCase/>
+</AutopsyCase>

@@ -1,0 +1,150 @@
+Parsed Plugins file.
+Launching angelfire v.20170831
+angelfire complete.
+Launching appcertdlls v.20120817
+appcertdlls complete.
+Launching appcompatcache v.20190112
+appcompatcache complete.
+Launching auditfail v.20081212
+auditfail complete.
+Launching backuprestore v.20130904
+backuprestore complete.
+Launching bam v.20180225
+bam complete.
+bam_tln complete.
+Launching btconfig v.20130117
+btconfig complete.
+Launching bthport v.20180705
+bthport complete.
+Launching comfoo v.20131007
+comfoo complete.
+Launching compname v.20090727
+compname complete.
+Launching crashcontrol v.20131210
+crashcontrol complete.
+Launching dafupnp v.20180705
+dafupnp complete.
+Launching ddm v.20081129
+ddm complete.
+Launching devclass v.20130630
+devclass complete.
+Launching diag_sr v.20120515
+diag_sr complete.
+Launching disablelastaccess v.20181207
+disablelastaccess complete.
+Launching dllsearch v.20100824
+dllsearch complete.
+Launching dnschanger v.20120203
+dnschanger complete.
+Launching eventlog v.20090112
+eventlog complete.
+Launching eventlogs v.20081219
+eventlogs complete.
+Launching fw_config v.20080328
+fw_config complete.
+Launching hibernate v.20081216
+hibernate complete.
+Launching ide v.20080418
+ide complete.
+Launching imagedev v.20140104
+imagedev complete.
+Launching kbdcrash v.20081212
+kbdcrash complete.
+Launching legacy v.20120524
+legacy complete.
+Launching lsa_packages v.20140730
+lsa_packages complete.
+Launching macaddr v.20190506
+macaddr complete.
+Launching mountdev v.20130530
+mountdev complete.
+Launching mountdev2 v.20140721
+mountdev2 complete.
+Launching netlogon v.20190223
+netlogon complete.
+Launching netsvcs v.20130905
+netsvcs complete.
+Launching network v.20080324
+network complete.
+Launching nic v.20100401
+nic complete.
+Launching nic2 v.20150812
+nic2 complete.
+Launching nic_mst2 v.20080324
+nic_mst2 complete.
+Launching nolmhash v.20100712
+nolmhash complete.
+Launching pagefile v.20140505
+pagefile complete.
+Launching pending v.20130711
+pending complete.
+Launching phdet v.20120817
+phdet complete.
+Launching prefetch v.20160506
+prefetch complete.
+Launching processor_architecture v.20140505
+processor_architecture complete.
+Launching productpolicy v.20091116
+productpolicy complete.
+Launching producttype v.20100325
+producttype complete.
+Launching profiler v.20140510
+profiler complete.
+Launching rdpnla v.20151203
+rdpnla complete.
+Launching rdpport v.20100713
+rdpport complete.
+Launching regin v.20141124
+regin complete.
+Launching remoteaccess v.20160906
+remoteaccess complete.
+Launching routes v.20100817
+routes complete.
+Launching safeboot v.20081216
+safeboot complete.
+Launching securityproviders v.20120312
+securityproviders complete.
+Launching services v.20080507
+services complete.
+Launching shares v.20140730
+Use of uninitialized value $list in pattern match (m//) at PERL2EXE_STORAGE/utf8_heavy.pl line 399.
+shares complete.
+Launching shimcache v.20190112
+shimcache complete.
+Launching shutdown v.20080324
+shutdown complete.
+Launching shutdowncount v.20080709
+ControlSet001\Control\Watchdog\Display not found.
+shutdowncount complete.
+Launching source_os v.20180629
+source_os complete.
+Launching stillimage v.20100222
+stillimage complete.
+Launching svc v.20131010
+svc complete.
+Launching svcdll v.20130603
+svcdll complete.
+Launching svc_plus v.20120625
+Use of uninitialized value $list in pattern match (m//) at PERL2EXE_STORAGE/utf8_heavy.pl line 399.
+svc_plus complete.
+Launching termcert v.20110316
+termcert complete.
+Launching termserv v.20190527
+termserv complete.
+Launching timezone v.20160318
+timezone complete.
+Launching usb v.20141111
+usb complete.
+Launching usbdevices v.20140416
+usbdevices complete.
+Launching usbstor v.20141111
+usbstor complete.
+Launching usbstor2 v.20080825
+ControlSet001\Enum\USBStor not found.
+usbstor2 complete.
+Launching usbstor3 v.20100312
+usbstor3 complete.
+Launching wpdbusenum v.20141111
+wpdbusenum complete.
+Launching xpedition v.20120722
+xpedition complete.

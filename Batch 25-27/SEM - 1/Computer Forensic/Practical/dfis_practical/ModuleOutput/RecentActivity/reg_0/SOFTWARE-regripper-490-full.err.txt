@@ -1,0 +1,201 @@
+Parsed Plugins file.
+Launching ahaha v.20131009
+ahaha complete.
+Launching appcompatflags v.20130930
+appcompatflags complete.
+appinitdlls complete.
+Launching appkeys v.20180920
+appkeys complete.
+Launching apppaths v.20120524
+apppaths complete.
+Launching assoc v.20180117
+assoc complete.
+Launching at v.20140821
+at complete.
+audiodev complete.
+Launching banner v.20081119
+banner complete.
+Launching bho v.20130408
+bho complete.
+Launching bitbucket v.20080418
+Microsoft\Windows\CurrentVersion\Explorer\BitBucket not found.
+bitbucket complete.
+Launching btconfig v.20130117
+btconfig complete.
+Launching clsid v.20180823
+clsid complete.
+Launching cmd_shell v.20130405
+cmd_shell complete.
+Launching codeid v.20100608
+codeid complete.
+Launching ctrlpnl v.20100116
+ctrlpnl complete.
+Launching dcom v.20151203
+dcom complete.
+Launching defbrowser v.20091116
+defbrowser complete.
+Launching dfrg v.20110321
+Microsoft\Dfrg\BootOptimizeFunction not found.
+dfrg complete.
+direct complete.
+Launching disablesr v.20120914
+disablesr complete.
+Launching drivers32 v.20130408
+drivers32 complete.
+Launching drwatson v.20081219
+Microsoft\DrWatson not found.
+drwatson complete.
+Launching emdmgmt v.20120207
+emdmgmt complete.
+Launching esent v.20101202
+esent complete.
+Launching etos v.20150325
+etos complete.
+execpolicy complete.
+Launching gauss v.20120809
+gauss complete.
+Launching gpohist v.
+gpohist complete.
+Launching handler v.20150826
+handler complete.
+Launching ie_version v.20140717
+ie_version complete.
+Launching ie_zones v.20140611
+ie_zones complete.
+Launching imagefile v.20190511
+imagefile complete.
+Launching init_dlls v.20110309
+init_dlls complete.
+Launching inprocserver v.20141126
+inprocserver complete.
+Launching installedcomp v.20130911
+installedcomp complete.
+Launching installer v.20120917
+installer complete.
+Launching javasoft v.20130216
+javasoft complete.
+Launching kankan v.20131011
+kankan complete.
+Launching kb950582 v.20081212
+kb950582 complete.
+Launching landesk v.20160823
+landesk complete.
+Launching lastloggedon v.20160531
+lastloggedon complete.
+lazyshell complete.
+Launching licenses v.20120305
+licenses complete.
+Launching logmein v.20161011
+logmein complete.
+Launching macaddr v.20190506
+macaddr complete.
+Launching mrt v.20080804
+mrt complete.
+Launching msis v.20090911
+msis complete.
+Launching netsh v.20190316
+netsh complete.
+Launching networkcards v.20080325
+networkcards complete.
+Launching networklist v.20190128
+networklist complete.
+Launching networkuid v.20100312
+Microsoft\Windows NT\CurrentVersion\Network not found.
+networkuid complete.
+Launching opencandy v.20131008
+opencandy complete.
+Launching port_dev v.20090118
+port_dev complete.
+Launching product v.20100325
+product complete.
+Launching profilelist v.20100219
+profilelist complete.
+Launching pslogging v.20181209
+pslogging complete.
+Launching psscript v.20170107
+psscript complete.
+Launching regback v.20100219
+regback complete.
+Launching removdev v.200800611
+removdev complete.
+Launching renocide v.20130425
+renocide complete.
+runonceex complete.
+Launching sbs v.20180101
+sbs complete.
+Launching schedagent v.20100817
+schedagent complete.
+Launching secctr v.20100310
+secctr complete.
+Launching sfc v.20100305
+Use of uninitialized value $list in pattern match (m//) at PERL2EXE_STORAGE/utf8_heavy.pl line 399.
+sfc complete.
+Launching shellexec v.20130410
+shellexec complete.
+Launching shellext v.20100515
+shellext complete.
+Launching shelloverlay v.20100308
+shelloverlay complete.
+silentprocessexit complete.
+Launching snapshot v.20080725
+snapshot complete.
+Launching soft_run v.20130603
+Use of uninitialized value $list in pattern match (m//) at PERL2EXE_STORAGE/utf8_heavy.pl line 399.
+soft_run complete.
+Launching spp_clients v.20130429
+spp_clients complete.
+Launching sql_lastconnect v.20090112
+sql_lastconnect complete.
+Launching ssid v.20100301
+ssid complete.
+Launching startmenuinternetapps_lm.20101219
+startmenuinternetapps_lm complete.
+Launching susclient v.20140326
+susclient complete.
+Launching svchost v.20100322
+svchost complete.
+Launching systemindex v.20120716
+systemindex complete.
+Launching teamviewer v.20150627
+teamviewer complete.
+Launching termserv v.20190527
+termserv complete.
+Launching thunderbirdinstalled v.20120524
+thunderbirdinstalled complete.
+tracing complete.
+Launching trappoll v.20120305
+trappoll complete.
+Launching uac v.20130213
+uac complete.
+Launching uninstall v.20140512
+uninstall complete.
+Launching updates v.20170715
+updates complete.
+Launching urlzone v.20090526
+urlzone complete.
+Launching virut v.20130425
+virut complete.
+Launching volinfocache v.20120822
+volinfocache complete.
+watp complete.
+Launching wbem v.20120306
+wbem complete.
+Launching webroot v.20191230
+webroot complete.
+Launching winbackup v.20120812
+winbackup complete.
+Launching winevt v.20140402
+winevt complete.
+Launching winlogon v.20130425
+winlogon complete.
+Launching winnt_cv v.20161123
+winnt_cv complete.
+Launching winver v.20081210
+winver complete.
+Launching win_cv v.20090312
+win_cv complete.
+wow64 complete.
+wsh_settings complete.
+Launching yahoo_lm v.20101219
+Yahoo not found.
+yahoo_lm complete.

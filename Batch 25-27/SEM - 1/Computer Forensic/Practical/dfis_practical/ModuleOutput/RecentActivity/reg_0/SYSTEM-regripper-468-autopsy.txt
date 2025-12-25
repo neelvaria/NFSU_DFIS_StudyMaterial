@@ -1,0 +1,30 @@
+<usb><mtime></mtime><artifacts>
+<device mtime="1393527706" dev="ROOT_HUB" >4&19b00b91&0</device>
+<device mtime="1393527706" dev="ROOT_HUB" >4&2c69bc36&0</device>
+<device mtime="1393527706" dev="ROOT_HUB20" >4&22478bbf&0</device>
+<device mtime="1393526632" dev="VID_0204&PID_6025" >250550024C09E701</device>
+</artifacts></usb>
+----------------------------------------
+<SSID>
+<mtime></mtime>
+<artifacts>
+</artifacts></SSID>
+----------------------------------------
+<ProcessorArchitecture><mtime></mtime><artifacts><architecture mtime="">AMD64</architecture></artifacts></ProcessorArchitecture>
+----------------------------------------
+<CompName>
+<mtime></mtime>
+<artifacts>
+<compname name="ComputerName">GGRAVES-PC</compname>
+<compname name="Domain"></compname>
+</artifacts></CompName>
+----------------------------------------
+<Profiler>
+<mtime></mtime>
+<artifacts>
+<profiler name="OS">Windows_NT</profiler>
+<profiler name="PROCESSOR_ARCHITECTURE">AMD64</profiler>
+<profiler name="PROCESSOR_IDENTIFIER">AMD64 Family 15 Model 4 Stepping 10, AuthenticAMD</profiler>
+<profiler name="TEMP">%SystemRoot%\TEMP</profiler>
+</artifacts></Profiler>
+----------------------------------------

@@ -11,6 +11,7 @@ IPINFO_API_URL = "https://ipinfo.io/{ip}/json"  # Geolocation API endpoint (IPin
 
 # --- Function to load blacklisted IPs from file ---
 def load_blacklist(filepath):
+    
     with open(filepath, "r") as f:                      # Open blacklist file for reading
         return set(line.strip() for line in f if line.strip())  # Read each line, strip whitespace, use as a set
 

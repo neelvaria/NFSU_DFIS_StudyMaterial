@@ -1,0 +1,1 @@
+Can't call method "is_dirty" on an undefined value at C:\Program Files\Autopsy-4.22.1\autopsy\rr-full\rip.exe line 422.

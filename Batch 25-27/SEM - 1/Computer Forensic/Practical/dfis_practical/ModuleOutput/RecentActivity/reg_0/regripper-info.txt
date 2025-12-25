@@ -1,0 +1,11 @@
+484	/img_drive7.E01/Windows/system32/config/RegBack/SAM
+450	/img_drive7.E01/Windows/system32/config/SAM
+10	/img_drive7.E01/Users/Admin/NTUSER.DAT
+96	/img_drive7.E01/Users/Default/NTUSER.DAT
+500	/img_drive7.E01/Windows/system32/config/systemprofile/ntuser.dat
+493	/img_drive7.E01/Windows/system32/config/RegBack/SYSTEM
+468	/img_drive7.E01/Windows/system32/config/SYSTEM
+490	/img_drive7.E01/Windows/system32/config/RegBack/SOFTWARE
+462	/img_drive7.E01/Windows/system32/config/SOFTWARE
+487	/img_drive7.E01/Windows/system32/config/RegBack/SECURITY
+456	/img_drive7.E01/Windows/system32/config/SECURITY

@@ -1,0 +1,87 @@
+<logon>
+<mtime>Thu Feb 27 19:04:52 2014</mtime><artifacts>
+</artifacts></logon>
+----------------------------------------
+<recentdocs><mtime>Thu Feb 27 19:04:46 2014</mtime><artifacts>
+<doc name="Windows">Doc2.doc</doc>
+<doc name="Windows">schematics.ppt</doc>
+<doc name="Windows">New Jobs</doc>
+<doc name="Windows">job.doc</doc>
+<doc name="Windows">Stuff</doc>
+<doc name="Windows">Random Crap.xls</doc>
+<doc name="Windows">Resume</doc>
+<doc name="Windows">References.doc</doc>
+<doc name="Windows">template.ppt</doc>
+<doc name="Windows">Project 2</doc>
+<doc name="Windows">capabilities.ppt</doc>
+<doc name="Windows">proposal.ppt</doc>
+<doc name="Windows">etc</doc>
+<doc name="Windows">lmhosts.sam</doc>
+<doc name="Windows">Project</doc>
+<doc name="Windows">Requirements.xls</doc>
+<doc name="Windows">Deliverable 2.doc</doc>
+</artifacts></recentdocs>
+----------------------------------------
+<runMRU>
+<mtime>Thu Feb 27 05:56:11 2014</mtime>
+<artifacts>
+</artifacts>
+</runMRU>
+----------------------------------------
+<shellfolders>
+<mtime>Thu Feb 27 05:50:39 2014</mtime>
+<artifacts>
+<shell name="!Do not use this registry key"> Use the SHGetFolderPath or SHGetKnownFolderPath function instead</shell>
+<shell name="AppData"> C:\Users\Ggraves\AppData\Roaming</shell>
+<shell name="Local AppData"> C:\Users\Ggraves\AppData\Local</shell>  
+<shell name="My Video"> C:\Users\Ggraves\Videos</shell>         
+<shell name="{1B3EA5DC-B587-4786-B4EF-BD1DC332AEAE}"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Libraries</shell>
+<shell name="My Pictures"> C:\Users\Ggraves\Pictures</shell>       
+<shell name="Desktop"> C:\Users\Ggraves\Desktop</shell>        
+<shell name="History"> C:\Users\Ggraves\AppData\Local\Microsoft\Windows\History</shell>
+<shell name="NetHood"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Network Shortcuts</shell>
+<shell name="{56784854-C6CB-462B-8169-88E350ACB882}"> C:\Users\Ggraves\Contacts</shell>       
+<shell name="Cookies"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Cookies</shell>
+<shell name="Favorites"> C:\Users\Ggraves\Favorites</shell>      
+<shell name="SendTo"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\SendTo</shell>
+<shell name="Start Menu"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Start Menu</shell>
+<shell name="My Music"> C:\Users\Ggraves\Music</shell>          
+<shell name="Programs"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</shell>
+<shell name="Recent"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Recent</shell>
+<shell name="CD Burning"> C:\Users\Ggraves\AppData\Local\Microsoft\Windows\Burn\Burn</shell>
+<shell name="PrintHood"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Printer Shortcuts</shell>
+<shell name="{7D1D3A04-DEBB-4115-95CF-2F29DA2920DA}"> C:\Users\Ggraves\Searches</shell>       
+<shell name="{374DE290-123F-4565-9164-39C4925E467B}"> C:\Users\Ggraves\Downloads</shell>      
+<shell name="{A520A1A4-1780-4FF6-BD18-167343C5AF16}"> C:\Users\Ggraves\AppData\LocalLow</shell>
+<shell name="Startup"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</shell>
+<shell name="Administrative Tools"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Administrative Tools</shell>
+<shell name="Personal"> C:\Users\Ggraves\Documents</shell>      
+<shell name="{BFB9D5E0-C6A9-404C-B2B2-AE6DB6AF4968}"> C:\Users\Ggraves\Links</shell>          
+<shell name="Cache"> C:\Users\Ggraves\AppData\Local\Microsoft\Windows\Temporary Internet Files</shell>
+<shell name="Templates"> C:\Users\Ggraves\AppData\Roaming\Microsoft\Windows\Templates</shell>
+<shell name="{4C5C32FF-BB9D-43B0-B5B4-2D72E54EAAA4}"> C:\Users\Ggraves\Saved Games</shell>    
+<shell name="Fonts"> C:\Windows\Fonts</shell>                
+
+</artifacts></shellfolders>
+----------------------------------------
+----------------------------------------
+<office>
+<mtime> Thu Feb 27 06:00:39 2014</mtime>
+<artifacts>
+<Word name="job References Previous items Upcoming items Important Deliverable 2 Deliverable 1 Requisition Doc3">1</Word>
+<Excel name="File1">C:\Users\Ggraves\Desktop\Stuff\Random Crap.xls</Excel>
+<Excel name="File2">C:\Users\Ggraves\Desktop\Project\Quotes.xls</Excel>
+<Excel name="File3">C:\Users\Ggraves\Desktop\Project\Requirements.xls</Excel>
+<Excel name="File4">C:\Users\Ggraves\Documents\Project 2\Projected Revenue.xls</Excel>
+<PowerPoint name="File1">C:\Users\Ggraves\Desktop\schematics.ppt</PowerPoint>
+<PowerPoint name="File2">C:\Users\Ggraves\Desktop\Stuff\template.ppt</PowerPoint>
+<PowerPoint name="File3">C:\Users\Ggraves\Documents\Project 2\capabilities.ppt</PowerPoint>
+<PowerPoint name="File4">C:\Users\Ggraves\Documents\proposal.ppt</PowerPoint>
+</artifacts>
+</office>
+----------------------------------------
+<NtuserNetwork>
+<mtime></mtime>
+<artifacts>
+</artifacts></NtuserNetwork>
+----------------------------------------

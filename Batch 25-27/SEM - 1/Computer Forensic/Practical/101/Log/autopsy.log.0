@@ -1,0 +1,212 @@
+2025-12-23 10:49:33.416 org.sleuthkit.autopsy.centralrepository.datamodel.RdbmsCentralRepo upgradeSchema
+INFO: Central Repository is up to date
+2025-12-23 10:49:33.432 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Starting local Solr SOLR8 server
+2025-12-23 10:49:33.436 org.sleuthkit.autopsy.keywordsearch.Server isLocalSolrRunning
+INFO: Solr server is running
+2025-12-23 10:49:33.436 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Local Solr SOLR8 server is already running
+2025-12-23 10:49:33.438 org.sleuthkit.autopsy.keywordsearch.Server isLocalSolrRunning
+INFO: Solr server is running
+2025-12-23 10:49:33.633 org.sleuthkit.autopsy.keywordsearch.Server$Collection <init>
+INFO: Using Solr document queue size = 30
+2025-12-23 10:49:33.655 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.49.1.0 loaded in native mode
+2025-12-23 10:49:33.664 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened 101 (101_20251223_102356) in D:\nfsu_dfis_resources\Batch 25-27\SEM - 1\Computer Forensic\Practical\101 as the current case
+2025-12-23 10:49:33.664 org.sleuthkit.autopsy.progress.LoggingProgressIndicator progress
+INFO: Retrieving images for case: autopsy.db...
+2025-12-23 10:49:33.665 org.sleuthkit.autopsy.progress.LoggingProgressIndicator progress
+INFO: Opening all filesystems for image: drive4.E01...
+2025-12-23 10:49:33.767 org.sleuthkit.autopsy.ingest.IngestMonitor$MonitorTimerAction logMonitoredRootDirectory
+INFO: Monitoring disk space of D:\
+2025-12-23 11:18:53.345 org.sleuthkit.autopsy.report.ReportBranding getReportTitle
+INFO: Using default report branding for report title
+2025-12-23 11:18:59.697 org.sleuthkit.autopsy.report.ReportBranding getReportFooter
+INFO: Using default report branding for report footer
+2025-12-23 11:18:59.769 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Data Source Usage
+2025-12-23 11:18:59.769 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+WARNING: useDataTypeIcon: unhandled artifact type = Data Source Usage
+2025-12-23 11:18:59.771 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Encryption Suspected
+2025-12-23 11:18:59.772 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Keyword Hits
+2025-12-23 11:18:59.773 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Metadata
+2025-12-23 11:18:59.774 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Operating System Information
+2025-12-23 11:18:59.775 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Recent Documents
+2025-12-23 11:18:59.776 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Run Programs
+2025-12-23 11:18:59.777 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Shell Bags
+2025-12-23 11:18:59.782 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Tagged Files
+2025-12-23 11:18:59.783 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Tagged Images
+2025-12-23 11:18:59.784 org.sleuthkit.autopsy.report.modules.html.HTMLReport useDataTypeIcon
+INFO: useDataTypeIcon: dataType = Tagged Results
+2025-12-23 11:23:17.269 org.sleuthkit.autopsy.corecomponents.DataContentViewerHex <init>
+INFO: Created HexView instance: org.sleuthkit.autopsy.corecomponents.DataContentViewerHex[,0,0,0x0,invalid,layout=javax.swing.GroupLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=100,height=58]]
+2025-12-23 11:23:17.294 org.sleuthkit.autopsy.contentviewers.MediaFileViewer <init>
+INFO: Created MediaView instance: org.sleuthkit.autopsy.contentviewers.MediaFileViewer[,0,0,0x0,invalid,layout=java.awt.CardLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-12-23 11:23:17.296 org.sleuthkit.autopsy.contentviewers.FileViewer <init>
+INFO: Created ApplicationContentViewer instance: org.sleuthkit.autopsy.contentviewers.FileViewer[,0,0,0x0,invalid,layout=javax.swing.OverlayLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-12-23 11:23:22.994 org.sleuthkit.autopsy.corecomponents.DataContentViewerHex <init>
+INFO: Created HexView instance: org.sleuthkit.autopsy.corecomponents.DataContentViewerHex[,0,0,0x0,invalid,layout=javax.swing.GroupLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=100,height=58]]
+2025-12-23 11:23:23.033 org.sleuthkit.autopsy.contentviewers.MediaFileViewer <init>
+INFO: Created MediaView instance: org.sleuthkit.autopsy.contentviewers.MediaFileViewer[,0,0,0x0,invalid,layout=java.awt.CardLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-12-23 11:23:23.035 org.sleuthkit.autopsy.contentviewers.FileViewer <init>
+INFO: Created ApplicationContentViewer instance: org.sleuthkit.autopsy.contentviewers.FileViewer[,0,0,0x0,invalid,layout=javax.swing.OverlayLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-12-23 11:31:37.945 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Cyber Triage Malware Scanner, version = 1.0.0
+2025-12-23 11:31:37.948 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Central Repository, version = 4.22.1
+2025-12-23 11:31:37.952 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.22.1
+2025-12-23 11:31:37.958 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = DJI Drone Analyzer, version = 4.22.1
+2025-12-23 11:31:37.965 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.22.1
+2025-12-23 11:31:37.967 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.22.1
+2025-12-23 11:31:37.97 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.22.1
+2025-12-23 11:31:37.972 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.22.1
+2025-12-23 11:31:37.972 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.22.1
+2025-12-23 11:31:37.975 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.22.1
+2025-12-23 11:31:37.978 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Android Analyzer (aLEAPP), version = 4.22.1
+2025-12-23 11:31:37.978 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = iOS Analyzer (iLEAPP), version = 4.22.1
+2025-12-23 11:31:37.981 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2025-12-23 11:31:37.985 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Picture Analyzer, version = 4.22.1
+2025-12-23 11:31:37.987 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.22.1
+2025-12-23 11:31:37.989 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.22.1
+2025-12-23 11:31:37.992 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = YARA Analyzer, version = 4.22.1
+2025-12-23 11:31:37.992 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.22.1
+2025-12-23 11:31:37.993 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.22.1
+2025-12-23 11:31:37.994 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.22.1
+2025-12-23 11:31:38.021 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2025-12-23 11:31:38.021 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.22.1
+2025-12-23 11:31:50.048 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 1 at 1766469710048
+2025-12-23 11:31:50.053 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer loadConfigFile
+INFO: Load successful
+2025-12-23 11:31:50.286 org.sleuthkit.autopsy.keywordsearch.Server isLocalSolrRunning
+INFO: Solr server is running
+2025-12-23 11:31:50.31 org.sleuthkit.autopsy.modules.yara.YaraIngestModule startUp
+INFO: YARA ingest module: No rule set was selected for this ingest job.
+2025-12-23 11:31:50.314 com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing startUp
+WARNING: An error occurred while starting the MalwareScanIngestModule.
+java.lang.IllegalStateException: No Cyber Triage license could be loaded.  Cyber Triage processing will be disabled.
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.getNewJobState(MalwareScanIngestModule.java:203)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.startUp(MalwareScanIngestModule.java:175)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule.startUp(MalwareScanIngestModule.java:86)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:1091)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:1052)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:833)
+2025-12-23 11:31:50.315 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Keyword search ingest module instance 2 shutting down
+2025-12-23 11:31:50.325 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Indexed files count: 1,512
+2025-12-23 11:31:50.326 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Indexed file chunks count: 1,891
+2025-12-23 11:31:50.328 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Cyber Triage Malware Scanner ingest module for job 1
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: No Cyber Triage license could be loaded.  Cyber Triage processing will be disabled.
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.startUp(MalwareScanIngestModule.java:183)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule.startUp(MalwareScanIngestModule.java:86)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:1091)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:1052)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:833)
+java.lang.IllegalStateException: No Cyber Triage license could be loaded.  Cyber Triage processing will be disabled.
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.startUp(MalwareScanIngestModule.java:183)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule.startUp(MalwareScanIngestModule.java:86)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:1091)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:1052)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:833)
+2025-12-23 11:31:50.328 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 1 could not be started
+2025-12-23 11:31:50.329 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Finished all ingest tasks for tier 0 of ingest job (data source = drive4.E01, data source object ID = 1, job ID = 1)
+2025-12-23 11:31:50.33 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Scheduling ingest tasks for tier 1 of ingest job (data source = drive4.E01, data source object ID = 1, job ID = 1)
+2025-12-23 11:31:50.33 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Finished all ingest tasks for tier 1 of ingest job (data source = drive4.E01, data source object ID = 1, job ID = 1)
+2025-12-23 11:31:50.33 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Finished all ingest tasks for ingest job (data source = drive4.E01, data source object ID = 1, job ID = 1)
+2025-12-23 11:31:50.33 org.sleuthkit.autopsy.ingest.IngestManager finishIngestJob
+INFO: Ingest job 1 cancelled at 1766469710330
+2025-12-23 11:31:50.372 org.sleuthkit.autopsy.casemodule.IngestJobInfoPanel$1 done
+INFO: The refreshing of the IngestJobInfoPanel was cancelled
+2025-12-23 13:25:29.114 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Stopping Solr 8 server
+2025-12-23 13:25:29.115 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Setting Solr 8 directory: C:\Program Files\Autopsy-4.22.1\autopsy\solr
+2025-12-23 13:25:29.115 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Running Solr 8 command: [C:\Program Files\Autopsy-4.22.1\autopsy\solr\bin\autopsy-solr.cmd, stop, -k, jjk#09s, -p, 23232] from C:\Program Files\Autopsy-4.22.1\autopsy\solr
+2025-12-23 13:25:29.149 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Finished running Solr 8 command
+2025-12-23 13:25:29.149 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Waiting for Solr server to stop
+2025-12-23 13:25:30.678 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Finished stopping Solr server
+2025-12-23 13:25:30.678 org.sleuthkit.autopsy.core.Installer <init>
+INFO: core installer created
+2025-12-23 13:25:30.69 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case 101 (101_20251223_102356) in D:\nfsu_dfis_resources\Batch 25-27\SEM - 1\Computer Forensic\Practical\101
+2025-12-23 13:25:32.695 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Shutting down image gallery controller for case 101 (101_20251223_102356)
+2025-12-23 13:25:32.695 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB close
+INFO: Closing the drawable.db
+2025-12-23 13:25:32.696 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Completed shut down of image gallery controller for case 101 (101_20251223_102356)

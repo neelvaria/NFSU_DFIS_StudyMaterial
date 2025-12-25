@@ -1,0 +1,4 @@
+2025-12-25 23:11:01,502 ERROR:File not found: example.txt
+2025-12-25 23:11:01,502 ERROR:Image not found: example.jpg
+2025-12-25 23:11:35,302 ERROR:File not found: example.txt
+2025-12-25 23:11:35,302 ERROR:Image not found: example.jpg
