@@ -1,0 +1,38 @@
+Self signed certificate fields that are entered with the password 
+
+Country Name (2 letter code) [AU]:IN
+State or Province Name (full name) [Some-State]:Gujarat
+Locality Name (eg, city) []:Ahmedabad
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Lab Test
+Organizational Unit Name (eg, section) []:Test
+Common Name (e.g. server FQDN or YOUR name) []:My Lab Test
+Email Address []:meet.2k21@gmail.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:pass@123#
+An optional company name []:Test labs
+Certificate request self-signature ok
+subject=C=IN, ST=Gujarat, L=Ahmedabad, O=Lab Test, OU=Test, CN=My Lab Test, emailAddress=meet.2k21@gmail.com
+
+For the server csr the data filled is 
+-----
+Country Name (2 letter code) [AU]:IN
+State or Province Name (full name) [Some-State]:Gujarat
+Locality Name (eg, city) []:Vadodara
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Test Labs
+Organizational Unit Name (eg, section) []:Test
+Common Name (e.g. server FQDN or YOUR name) []:My Testing Company
+Email Address []:meet.2k21@gmail.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:pass@123#
+An optional company name []:Testing labs
+
+
+
+
+openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 365 -sha256
+Certificate request self-signature ok
+subject=C=IN, ST=Gujarat, L=Vadodara, O=Test Labs, OU=Test, CN=My Testing Company, emailAddress=meet.2k21@gmail.com
