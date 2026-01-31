@@ -22,22 +22,6 @@ This repository is built to help students with structured learning, revision, an
 
 ---
 
-## 🗂️ Repository Structure
-
-NFSU_DFIS_StudyMaterial/
-│
-├── Batch 2024-2026/
-│   └── Subject-wise Notes, PDFs, Assignments
-│
-├── Batch 2025-2027/
-│   └── Subject-wise Notes, PDFs, Assignments
-│
-├── Super Senior Material/
-│   └── Advanced Notes, Guides, Question Papers
-│
-└── .gitattributes
-
----
 
 ## 📥 How to Use
 
