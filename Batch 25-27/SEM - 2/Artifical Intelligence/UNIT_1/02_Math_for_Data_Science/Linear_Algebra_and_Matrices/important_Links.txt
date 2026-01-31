@@ -1,0 +1,6 @@
+1. Vectors :https://youtu.be/fNk_zzaMoSs?si=vnH6naRSa5PP8kOp
+2. Linear Transformations : https://youtu.be/kYB8IZa5AuE?si=zyd28xmbjaccUfM1
+3. Matrix multiplication: https://youtu.be/XkY2DOUCWMU?si=gp5zLQHAuVXL4JwY
+4. 3D Transformations: https://youtu.be/XkY2DOUCWMU?si=WB1jbulX44H_XsNN
+5. Determinants: https://youtu.be/Ip3X9LOh2dk?si=CWY_0Yelisl2YnNy
+6. PDF/CDF : https://youtu.be/YXLVjCKVP7U?si=Fi1kAgS9kVvAAya2
