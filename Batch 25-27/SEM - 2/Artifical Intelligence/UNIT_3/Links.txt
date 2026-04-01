@@ -1,0 +1,9 @@
+Links
+
+1. https://sites.google.com/view/cs502project/deep-learning-for-biology-a-tutorial?authuser=0
+
+2. https://viso.ai/deep-learning/deep-neural-network-three-popular-types/
+
+3. https://www.3blue1brown.com/topics/neural-networks
+
+4. https://aws.amazon.com/what-is/recurrent-neural-network/

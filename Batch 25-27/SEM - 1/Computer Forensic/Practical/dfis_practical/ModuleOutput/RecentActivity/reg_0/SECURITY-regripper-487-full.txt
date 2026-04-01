@@ -1,0 +1,112 @@
+***Hive Check***
+Hive is not dirty.
+
+auditpol v.20190510
+(Security) Get audit policy from the Security hive file
+
+auditpol
+Policy\PolAdtEv
+LastWrite Time Tue Jul 14 04:45:41 2009 (UTC)
+
+Possible Win7/Win2008
+System:Security State Change                       S    
+System:Security System Extension                   N    
+System:System Integrity                            S/F  
+System:IPsec Driver                                N    
+System:Other System Events                         S/F  
+Logon/Logoff:Logon                                 S    
+Logon/Logoff:Logoff                                S    
+Logon/Logoff:Account Lockout                       S    
+Logon/Logoff:IPsec Main Mode                       N    
+Logon/Logoff:IPsec Quick Mode                      S    
+Logon/Logoff:IPsec Extended Mode                   N    
+Logon/Logoff:Special Logon                         N    
+Logon/Logoff:Other Logon/Logoff Events             N    
+Logon/Logoff:Network Policy Server                 S/F  
+Object Access:File System                          N    
+Object Access:Registry                             N    
+Object Access:Kernel Object                        N    
+Object Access:SAM                                  N    
+Object Access:Other Object Access Events           N    
+Object Access:Certification Services               N    
+Object Access:Application Generated                N    
+Object Access:Handle Manipulation                  N    
+Object Access:File Share                           N    
+Object Access:Filtering Platform Packet Drop       N    
+Object Access:Filtering Platform Connection        N    
+Object Access:Detailed File Share                  N    
+Privilege Use:Sensitive Privilege Use              N    
+Privilege Use:Non Sensitive Privilege Use          N    
+Privilege Use:Other Privilege Use Events           N    
+Detailed Tracking:Process Creation                 N    
+Detailed Tracking:Process Termination              N    
+Detailed Tracking:DPAPI Activity                   N    
+Detailed Tracking:RPC Events                       N    
+Policy Change:Audit Policy Change                  S    
+Policy Change:Authentication Policy Change         S    
+Policy Change:Authorization Policy Change          N    
+Policy Change:MPSSVC Rule-Level Policy Change      N    
+Policy Change:Filtering Platform Policy Change     N    
+Policy Change:Other Policy Change Events           N    
+Account Management:User Account Management         S    
+Account Management:Computer Account Management     N    
+Account Management:Security Group Management       S    
+Account Management:Distribution Group Management   N    
+Account Management:Application Group Management    N    
+Account Management:Other Account Management Events N    
+DS Access:Directory Service Access                 N    
+DS Access:Directory Service Changes                N    
+DS Access:Directory Service Replication            N    
+DS Access:Detailed Directory Service Replication   N    
+Account Logon:Credential Validation                N    
+Account Logon:Kerberos Service Ticket Operations   N    
+Account Logon:Other Account Logon Events           N    
+Account Logon:Kerberos Authentication Service      N    
+----------------------------------------
+auditpol_xp v.20121128
+(Security) Get audit policy from the Security hive file
+
+auditpol
+Policy\PolAdtEv
+LastWrite Time Tue Jul 14 04:45:41 2009 (UTC)
+
+Length of data: 138 bytes.
+0x00000000: 00 01 00 00 09 00 00 00 78 00 00 00 01 00 00 00  ........x.......
+0x00000010: 03 00 00 00 03 00 01 00 01 00 01 00 00 00 01 00  ................
+0x00000020: 00 00 00 00 00 00 03 00 00 00 00 00 00 00 00 00  ................
+0x00000030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+0x00000040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00  ................
+0x00000050: 01 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00  ................
+0x00000060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+0x00000070: 00 00 00 00 00 00 00 00 05 00 09 00 0c 00 03 00  ................
+0x00000080: 04 00 06 00 06 00 04 00 04 00                    ..........
+**Auditing is NOT enabled.
+----------------------------------------
+lsasecrets v.20140408
+(Security) TEST - Get update times for LSA Secrets
+
+Domain secret - $MACHINE.ACC
+$MACHINE.ACC key not found
+----------------------------------------
+polacdms v.20100531
+(Security) Get local machine SID from Security hive
+
+PolAcDmS
+Policy\PolAcDmS
+LastWrite Time Thu Feb 27 05:31:23 2014 (UTC)
+
+Machine SID: S-1-5-21-1212894865-876620117-1625565741
+
+PolPrDmS
+Policy\PolPrDmS
+LastWrite Time Tue Jul 14 04:45:54 2009 (UTC)
+
+Primary Domain SID: S-1-5-
+----------------------------------------
+secrets v.20140730
+(Security) Get the last write time for the Policy\Secrets key
+
+Policy\Secrets
+LastWrite Time Tue Jul 14 05:08:35 2009 (UTC)
+
+----------------------------------------

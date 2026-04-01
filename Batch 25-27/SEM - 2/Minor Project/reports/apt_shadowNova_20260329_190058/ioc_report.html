@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IOC Extraction Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; }
+
+  /* ── Header ── */
+  .header { background: linear-gradient(135deg, #1f2937, #111827);
+             border-bottom: 2px solid #30363d; padding: 24px 32px; }
+  .header h1 { font-size: 24px; color: #58a6ff; }
+  .header p  { color: #8b949e; margin-top: 4px; font-size: 13px; }
+
+  /* ── Main ── */
+  .main { padding: 24px 32px; }
+
+  /* ── Cards ── */
+  .cards { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+  .card {
+    background: #161b22; border: 2px solid #30363d; border-radius: 10px;
+    padding: 14px 18px; text-align: center; min-width: 110px;
+    cursor: pointer; transition: all 0.2s ease; user-select: none;
+  }
+  .card:hover {
+    border-color: #58a6ff; background: #1f2937;
+    transform: translateY(-2px); box-shadow: 0 4px 12px rgba(88,166,255,0.2);
+  }
+  .card.active {
+    border-color: #58a6ff; background: #1c2d40;
+    box-shadow: 0 0 0 3px rgba(88,166,255,0.3);
+  }
+  .card.dimmed { opacity: 0.35; }
+  .card-icon  { font-size: 22px; }
+  .card-count { font-size: 28px; font-weight: bold; color: #58a6ff; }
+  .card-label { font-size: 10px; color: #8b949e; margin-top: 4px; letter-spacing: 0.5px; }
+
+  /* ── Filter Bar ── */
+  .filter-bar {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .filter-label {
+    font-size: 13px; color: #8b949e; font-weight: 600;
+  }
+  .filter-active {
+    background: #1c2d40; border: 1px solid #58a6ff;
+    color: #58a6ff; padding: 6px 14px; border-radius: 20px;
+    font-size: 13px; font-weight: 600; display: none;
+  }
+  .show-all-btn {
+    background: #21262d; border: 1px solid #30363d;
+    color: #c9d1d9; padding: 7px 16px; border-radius: 20px;
+    font-size: 13px; cursor: pointer; transition: all 0.2s;
+    font-weight: 600;
+  }
+  .show-all-btn:hover { background: #30363d; border-color: #58a6ff; color: #58a6ff; }
+  .show-all-btn.active { background: #1c2d40; border-color: #58a6ff; color: #58a6ff; }
+
+  /* ── Result count ── */
+  .result-count {
+    font-size: 12px; color: #8b949e; margin-left: auto;
+  }
+  .result-count span { color: #58a6ff; font-weight: bold; }
+
+  /* ── Risk Bar ── */
+  .risk-bar { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .risk-pill {
+    padding: 6px 14px; border-radius: 20px; font-size: 13px;
+    font-weight: 600; cursor: pointer; transition: all 0.2s; opacity: 0.9;
+  }
+  .risk-pill:hover { opacity: 1; transform: scale(1.05); }
+
+  /* ── Search ── */
+  .search-wrap { margin-bottom: 16px; }
+  .search-input {
+    width: 100%; padding: 10px 16px; border-radius: 8px;
+    background: #161b22; border: 1px solid #30363d;
+    color: #c9d1d9; font-size: 13px; outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-input:focus { border-color: #58a6ff; }
+  .search-input::placeholder { color: #484f58; }
+
+  /* ── Table ── */
+  .table-wrap {
+    background: #161b22; border: 1px solid #30363d;
+    border-radius: 10px; overflow: hidden;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th {
+    background: #1f2937; color: #8b949e; padding: 11px 14px;
+    text-align: left; font-size: 11px; text-transform: uppercase;
+    letter-spacing: 0.8px; position: sticky; top: 0; z-index: 1;
+  }
+  td { padding: 10px 14px; border-top: 1px solid #21262d; font-size: 13px; }
+  tr:hover td { background: #1f2937; }
+  tr.hidden { display: none; }
+  .mono {
+    font-family: 'Courier New', monospace; font-size: 11px;
+    word-break: break-all; color: #79c0ff;
+  }
+  .badge {
+    padding: 3px 10px; border-radius: 12px; font-size: 11px;
+    font-weight: bold; color: #000; white-space: nowrap;
+  }
+
+  /* ── No results ── */
+  .no-results {
+    text-align: center; padding: 40px; color: #484f58;
+    font-size: 14px; display: none;
+  }
+
+  /* ── Copy button ── */
+  .copy-btn {
+    background: none; border: 1px solid #30363d; color: #8b949e;
+    padding: 2px 8px; border-radius: 4px; font-size: 10px;
+    cursor: pointer; margin-left: 6px; transition: all 0.15s;
+    vertical-align: middle;
+  }
+  .copy-btn:hover { border-color: #58a6ff; color: #58a6ff; }
+
+  /* ── Footer ── */
+  .footer { text-align: center; padding: 20px; color: #8b949e; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔍 Automated IOC Extractor — Threat Report</h1>
+  <p>
+    Source: <strong>apt_shadowNova.txt</strong>
+    &nbsp;|&nbsp; Generated: 2026-03-29T13:30:58Z
+    &nbsp;|&nbsp; Total IOCs: <strong>47</strong>
+  </p>
+</div>
+
+<div class="main">
+
+  <!-- IOC Type Cards -->
+  <div class="cards" id="cards">
+    
+      <div class="card" data-type="asn" onclick="filterByType('asn')" title="Click to filter asn">
+        <div class="card-icon">📡</div>
+        <div class="card-count">1</div>
+        <div class="card-label">ASN</div>
+      </div>
+      <div class="card" data-type="bitcoin_wallet" onclick="filterByType('bitcoin_wallet')" title="Click to filter bitcoin_wallet">
+        <div class="card-icon">₿</div>
+        <div class="card-count">1</div>
+        <div class="card-label">BITCOIN_WALLET</div>
+      </div>
+      <div class="card" data-type="cve" onclick="filterByType('cve')" title="Click to filter cve">
+        <div class="card-icon">⚠️</div>
+        <div class="card-count">3</div>
+        <div class="card-label">CVE</div>
+      </div>
+      <div class="card" data-type="domain" onclick="filterByType('domain')" title="Click to filter domain">
+        <div class="card-icon">🔗</div>
+        <div class="card-count">12</div>
+        <div class="card-label">DOMAIN</div>
+      </div>
+      <div class="card" data-type="email" onclick="filterByType('email')" title="Click to filter email">
+        <div class="card-icon">📧</div>
+        <div class="card-count">4</div>
+        <div class="card-label">EMAIL</div>
+      </div>
+      <div class="card" data-type="file_path_linux" onclick="filterByType('file_path_linux')" title="Click to filter file_path_linux">
+        <div class="card-icon">📁</div>
+        <div class="card-count">3</div>
+        <div class="card-label">FILE_PATH_LINUX</div>
+      </div>
+      <div class="card" data-type="file_path_windows" onclick="filterByType('file_path_windows')" title="Click to filter file_path_windows">
+        <div class="card-icon">📁</div>
+        <div class="card-count">3</div>
+        <div class="card-label">FILE_PATH_WINDOWS</div>
+      </div>
+      <div class="card" data-type="ipv4" onclick="filterByType('ipv4')" title="Click to filter ipv4">
+        <div class="card-icon">🌐</div>
+        <div class="card-count">4</div>
+        <div class="card-label">IPV4</div>
+      </div>
+      <div class="card" data-type="md5" onclick="filterByType('md5')" title="Click to filter md5">
+        <div class="card-icon">🔒</div>
+        <div class="card-count">1</div>
+        <div class="card-label">MD5</div>
+      </div>
+      <div class="card" data-type="mitre_attack" onclick="filterByType('mitre_attack')" title="Click to filter mitre_attack">
+        <div class="card-icon">🎯</div>
+        <div class="card-count">5</div>
+        <div class="card-label">MITRE_ATTACK</div>
+      </div>
+      <div class="card" data-type="registry_key" onclick="filterByType('registry_key')" title="Click to filter registry_key">
+        <div class="card-icon">🗝️</div>
+        <div class="card-count">3</div>
+        <div class="card-label">REGISTRY_KEY</div>
+      </div>
+      <div class="card" data-type="sha1" onclick="filterByType('sha1')" title="Click to filter sha1">
+        <div class="card-icon">🔒</div>
+        <div class="card-count">1</div>
+        <div class="card-label">SHA1</div>
+      </div>
+      <div class="card" data-type="sha256" onclick="filterByType('sha256')" title="Click to filter sha256">
+        <div class="card-icon">🔒</div>
+        <div class="card-count">4</div>
+        <div class="card-label">SHA256</div>
+      </div>
+      <div class="card" data-type="url" onclick="filterByType('url')" title="Click to filter url">
+        <div class="card-icon">🔗</div>
+        <div class="card-count">2</div>
+        <div class="card-label">URL</div>
+      </div>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="filter-bar">
+    <span class="filter-label">🔽 Filter:</span>
+    <button class="show-all-btn active" id="showAllBtn" onclick="showAll()">
+      🗂 Show All IOCs
+    </button>
+    <span class="filter-active" id="filterActive"></span>
+    <span class="result-count" id="resultCount">
+      Showing <span id="visibleCount">47</span>
+      of 47 IOCs
+    </span>
+  </div>
+
+  <!-- Search -->
+  <div class="search-wrap">
+    <input class="search-input" id="searchInput" type="text"
+           placeholder="🔎  Search IOCs by value, type, risk, or malware family..."
+           oninput="applyFilters()" />
+  </div>
+
+  <!-- Risk Pills -->
+  <div class="risk-bar">
+    <span class="risk-pill" style="background:#ff4444;color:#000"
+          onclick="filterByRisk('critical')">
+      🔴 Critical: 0
+    </span>
+    <span class="risk-pill" style="background:#ff8800;color:#000"
+          onclick="filterByRisk('high')">
+      🟠 High: 0
+    </span>
+    <span class="risk-pill" style="background:#ffcc00;color:#000"
+          onclick="filterByRisk('medium')">
+      🟡 Medium: 0
+    </span>
+    <span class="risk-pill" style="background:#44bb44;color:#000"
+          onclick="filterByRisk('clean')">
+      🟢 Clean: 0
+    </span>
+    <span class="risk-pill" style="background:#888;color:#fff"
+          onclick="filterByRisk('unknown')">
+      ⚪ Unknown: 24
+    </span>
+    <span class="risk-pill" style="background:#444;color:#aaa"
+          onclick="filterByRisk('not checked')">
+      ⬜ Not Checked
+    </span>
+  </div>
+
+  <!-- IOC Table -->
+  <div class="table-wrap">
+    <table id="iocTable">
+      <thead>
+        <tr>
+          <th>IOC Type</th>
+          <th>Value</th>
+          <th>Risk</th>
+          <th>VT Detections</th>
+          <th>Malware Family</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        
+        <tr data-type="asn">
+          <td>📡 asn</td>
+          <td class="mono">AS64496</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="bitcoin_wallet">
+          <td>₿ bitcoin_wallet</td>
+          <td class="mono">1A1zP1eP5QGefi2DMPTfTL5SLmv7Divfna</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="cve">
+          <td>⚠️ cve</td>
+          <td class="mono">CVE-2023-44487</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="cve">
+          <td>⚠️ cve</td>
+          <td class="mono">CVE-2024-21762</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="cve">
+          <td>⚠️ cve</td>
+          <td class="mono">CVE-2024-3400</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">cdn-delivery-node.top</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">example-cert.in</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">login-sbi-secure.in</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">malware-dropper.ru</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">microsofft-auth.ru</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">phishing-hdfc-bank.live</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">protonmail.com</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">secure-hdfc-alert.com</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">secure-login-portal.xyz</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">shadow7abc3xyzqr.onion</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">targetbank.in</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="domain">
+          <td>🔗 domain</td>
+          <td class="mono">update-service-cdn.com</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="email">
+          <td>📧 email</td>
+          <td class="mono">attacker-collect@protonmail.com</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="email">
+          <td>📧 email</td>
+          <td class="mono">cert@example-cert.in</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="email">
+          <td>📧 email</td>
+          <td class="mono">noreply@secure-hdfc-alert.com</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="email">
+          <td>📧 email</td>
+          <td class="mono">victim@targetbank.in</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="file_path_linux">
+          <td>📁 file_path_linux</td>
+          <td class="mono">/etc/cron.d/system-update</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="file_path_linux">
+          <td>📁 file_path_linux</td>
+          <td class="mono">/tmp/.hidden_payload</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="file_path_linux">
+          <td>📁 file_path_linux</td>
+          <td class="mono">/var/tmp/backdoor.sh</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="file_path_windows">
+          <td>📁 file_path_windows</td>
+          <td class="mono">C:\ProgramData\Microsoft\sysmon.exe</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="file_path_windows">
+          <td>📁 file_path_windows</td>
+          <td class="mono">C:\Users\Public\Documents\updater.dll</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="file_path_windows">
+          <td>📁 file_path_windows</td>
+          <td class="mono">C:\Windows\Temp\svchost32.exe</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="ipv4">
+          <td>🌐 ipv4</td>
+          <td class="mono">103.75.190.12</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="ipv4">
+          <td>🌐 ipv4</td>
+          <td class="mono">185.220.101.47</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="ipv4">
+          <td>🌐 ipv4</td>
+          <td class="mono">45.33.32.156</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="ipv4">
+          <td>🌐 ipv4</td>
+          <td class="mono">91.108.4.241</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="md5">
+          <td>🔒 md5</td>
+          <td class="mono">d41d8cd98f00b204e9800998ecf8427e</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="mitre_attack">
+          <td>🎯 mitre_attack</td>
+          <td class="mono">T1053.005</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="mitre_attack">
+          <td>🎯 mitre_attack</td>
+          <td class="mono">T1059.001</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="mitre_attack">
+          <td>🎯 mitre_attack</td>
+          <td class="mono">T1071.001</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="mitre_attack">
+          <td>🎯 mitre_attack</td>
+          <td class="mono">T1486</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="mitre_attack">
+          <td>🎯 mitre_attack</td>
+          <td class="mono">T1566.001</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="registry_key">
+          <td>🗝️ registry_key</td>
+          <td class="mono">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\UpdateService</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="registry_key">
+          <td>🗝️ registry_key</td>
+          <td class="mono">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="registry_key">
+          <td>🗝️ registry_key</td>
+          <td class="mono">HKLM\SYSTEM\CurrentControlSet\Services\ShadowSvc</td>
+          <td><span class="badge" style="background:#444;color:#aaa">NOT CHECKED</span></td>
+          <td style="color:#666">—</td>
+          <td style="color:#666">—</td>
+        </tr>
+        <tr data-type="sha1">
+          <td>🔒 sha1</td>
+          <td class="mono">da39a3ee5e6b4b0d3255bfef95601890afd80709</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="sha256">
+          <td>🔒 sha256</td>
+          <td class="mono">47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="sha256">
+          <td>🔒 sha256</td>
+          <td class="mono">aec070645fe53ee3b3763059376134f058cc337247c978add178b6ccdfb0019f</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="sha256">
+          <td>🔒 sha256</td>
+          <td class="mono">cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="sha256">
+          <td>🔒 sha256</td>
+          <td class="mono">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="url">
+          <td>🔗 url</td>
+          <td class="mono">http://malware-dropper.ru/payload.exe</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr data-type="url">
+          <td>🔗 url</td>
+          <td class="mono">https://phishing-hdfc-bank.live/login</td>
+          <td><span class="badge" style="background:#888888">UNKNOWN</span></td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="no-results" id="noResults">
+      😶 No IOCs match your current filter. <a href="#" onclick="showAll()" style="color:#58a6ff;">Show all</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Generated by <strong>Automated IOC Extractor v1.0</strong>
+  &nbsp;|&nbsp; Digital Forensics Minor Project
+</div>
+
+<script>
+  // ── State ──────────────────────────────────
+  let activeType = null;   // currently selected card type
+  let activeRisk = null;   // currently selected risk level
+
+  const totalRows = document.querySelectorAll('#tableBody tr').length;
+
+  // ── Filter by IOC Type (card click) ────────
+  function filterByType(type) {
+    if (activeType === type) {
+      // clicking same card again → show all
+      showAll();
+      return;
+    }
+    activeType = type;
+    activeRisk = null;
+
+    // Update card styles
+    document.querySelectorAll('.card').forEach(c => {
+      if (c.dataset.type === type) {
+        c.classList.add('active');
+        c.classList.remove('dimmed');
+      } else {
+        c.classList.remove('active');
+        c.classList.add('dimmed');
+      }
+    });
+
+    // Update show all button
+    document.getElementById('showAllBtn').classList.remove('active');
+
+    // Show filter badge
+    const badge = document.getElementById('filterActive');
+    badge.style.display = 'inline-block';
+    badge.textContent = '✕  ' + type.toUpperCase();
+    badge.onclick = showAll;
+
+    applyFilters();
+  }
+
+  // ── Filter by Risk Level ────────────────────
+  function filterByRisk(risk) {
+    if (activeRisk === risk) {
+      showAll();
+      return;
+    }
+    activeRisk = risk;
+    activeType = null;
+
+    // Reset cards
+    document.querySelectorAll('.card').forEach(c => {
+      c.classList.remove('active', 'dimmed');
+    });
+
+    document.getElementById('showAllBtn').classList.remove('active');
+
+    const badge = document.getElementById('filterActive');
+    badge.style.display = 'inline-block';
+    badge.textContent = '✕  Risk: ' + risk.toUpperCase();
+    badge.onclick = showAll;
+
+    applyFilters();
+  }
+
+  // ── Show All ────────────────────────────────
+  function showAll() {
+    activeType = null;
+    activeRisk = null;
+    document.getElementById('searchInput').value = '';
+
+    // Reset cards
+    document.querySelectorAll('.card').forEach(c => {
+      c.classList.remove('active', 'dimmed');
+    });
+
+    document.getElementById('showAllBtn').classList.add('active');
+
+    const badge = document.getElementById('filterActive');
+    badge.style.display = 'none';
+    badge.textContent = '';
+
+    applyFilters();
+    return false;
+  }
+
+  // ── Core filter logic ───────────────────────
+  function applyFilters() {
+    const search = document.getElementById('searchInput').value.toLowerCase().trim();
+    const rows   = document.querySelectorAll('#tableBody tr');
+    let visible  = 0;
+
+    rows.forEach(row => {
+      const rowType = row.dataset.type || '';
+      const text    = row.innerText.toLowerCase();
+
+      const typeMatch = !activeType || rowType === activeType;
+      const riskMatch = !activeRisk || text.includes(activeRisk.toLowerCase());
+      const srchMatch = !search    || text.includes(search);
+
+      if (typeMatch && riskMatch && srchMatch) {
+        row.classList.remove('hidden');
+        visible++;
+      } else {
+        row.classList.add('hidden');
+      }
+    });
+
+    // Update counter
+    document.getElementById('visibleCount').textContent = visible;
+
+    // Show/hide no-results message
+    document.getElementById('noResults').style.display =
+      visible === 0 ? 'block' : 'none';
+  }
+
+  // ── Copy to clipboard ───────────────────────
+  function copyVal(val) {
+    navigator.clipboard.writeText(val).then(() => {
+      const btn = event.target;
+      btn.textContent = '✓';
+      setTimeout(() => btn.textContent = 'copy', 1200);
+    });
+  }
+</script>
+</body>
+</html>

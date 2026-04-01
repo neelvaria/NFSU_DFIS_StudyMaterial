@@ -1,0 +1,58 @@
+Various internetworking devices and perimeter devices
+OSI model and its layer wise properties
+properties and responsibilities of network and transport
+layer
+TCP/IP protocol suite
+difference and similarities between OSI and TCP/IP Model
+OSI security model (802) services, attack, mechanism
+Symmetric vs Asymmetric Encryption Techniques
+Monoalphabetic and polyalphabetic  cipher techniques
+Stream Cipher Vs Block Ciphers
+Various cryptographic techniques and its numerical on RSA
+DES/AES
+Firewall and types of firewall
+Pen testing
+Dumpster Driving and war Diving
+Network Pen testing Life-Cycle
+Active and Passive
+reconnaissance with examples 
+Attacks on MAC Protocols
+Various types of Attacks on different layer
+DoS/DDOS case studies
+ICMP and its uses
+port scanning, enumeration
+active scanning and passive scanning its tools
+Tools for network analysis, packet analysis and port
+scanning and spoofing
+Network log aggregation, collection and analysis
+promiscuous and monitoring mode of wireless
+digital signature
+use of HASH
+MD5/SHA
+TLS/SSL and use of SSL in HTTP
+Uses of Ping
+ARP and RARP
+DHCP and its uses
+DNS and its uses
+Attack on DNS
+Various attacks on DHCP
+TCP/UDP protocols
+Various types of servers: SNMP/DHCP/DNS/HTTP/WEB/PROXY/NEWS
+Attack on TCP/UDP
+Various attacks on network layers
+Penetration testing and its types
+Nmap and its uses
+SOC Functionality
+Role-based Access Control
+authentication and its type
+WLAN architecture
+802.11 architecture, types and its protocols
+WEP
+WPA/ WPA2
+wireless sniffing and spoofing 
+Live forensics
+data-in-motion investigation
+live Network Enumeration
+Oscar Methodology
+SIEM Tool Functionality
+CIA Triad

@@ -1,0 +1,105 @@
+THREAT INTELLIGENCE REPORT — APT Group "ShadowNova"
+====================================================
+Classification: TLP:WHITE | Date: 2024-03-15 | Version: 1.2
+Prepared by: Threat Intelligence Unit
+
+EXECUTIVE SUMMARY
+-----------------
+This report details the infrastructure and indicators associated with
+the "ShadowNova" threat actor group, responsible for targeted attacks
+against Indian financial institutions and government organizations.
+The group has been active since Q3 2023 and leverages a combination
+of spear-phishing, custom malware, and living-off-the-land techniques.
+
+INDICATORS OF COMPROMISE
+-------------------------
+
+COMMAND & CONTROL SERVERS:
+  Primary C2:    45.33.32.156
+  Secondary C2:  185.220.101.47
+  Backup C2:     103.75.190.12
+  IPv6 endpoint: 2001:db8:85a3::8a2e:370:7334
+
+MALICIOUS DOMAINS:
+  update-service-cdn[.]com
+  microsofft-auth[.]ru
+  secure-login-portal[.]xyz
+  cdn-delivery-node[.]top
+  hxxps://phishing-hdfc-bank.live/login
+  hxxp://malware-dropper[.]ru/payload.exe
+
+MALWARE FILE HASHES:
+  Dropper (MD5):    d41d8cd98f00b204e9800998ecf8427e
+  Loader (SHA1):    da39a3ee5e6b4b0d3255bfef95601890afd80709
+  Payload (SHA256): e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  Backdoor (SHA256):aec070645fe53ee3b3763059376134f058cc337247c978add178b6ccdfb0019f
+  Rootkit (SHA512): cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce
+                    47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e
+
+PHISHING EMAILS:
+  Sender:   noreply@secure-hdfc-alert[.]com
+  ReplyTo:  attacker-collect@protonmail.com
+  Target:   victim@targetbank.in
+
+VULNERABILITY REFERENCES:
+  CVE-2024-21762 (Fortinet FortiOS — exploited in initial access)
+  CVE-2023-44487 (HTTP/2 Rapid Reset — used for DDoS distraction)
+  CVE-2024-3400  (Palo Alto PAN-OS — used for lateral movement)
+
+MITRE ATT&CK TECHNIQUES:
+  T1566.001 — Phishing: Spearphishing Attachment
+  T1059.001 — Command and Scripting Interpreter: PowerShell
+  T1053.005 — Scheduled Task/Job: Scheduled Task
+  T1071.001 — Application Layer Protocol: Web Protocols
+  T1486     — Data Encrypted for Impact (Ransomware)
+
+WINDOWS REGISTRY PERSISTENCE:
+  HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\UpdateService
+  HKLM\SYSTEM\CurrentControlSet\Services\ShadowSvc
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+
+DROPPED FILE LOCATIONS:
+  C:\Windows\Temp\svchost32.exe
+  C:\Users\Public\Documents\updater.dll
+  C:\ProgramData\Microsoft\sysmon.exe
+
+LINUX PATHS OBSERVED:
+  /tmp/.hidden_payload
+  /etc/cron.d/system-update
+  /var/tmp/backdoor.sh
+
+RANSOMWARE PAYMENT:
+  Bitcoin Wallet: 1A1zP1eP5QGefi2DMPTfTL5SLmv7Divfna
+  Monero Address: (contact attacker via Telegram)
+
+NETWORK INDICATORS:
+  ASN12345 — Bulletproof hosting provider
+  AS64496  — Suspicious autonomous system
+
+ADDITIONAL INFRASTRUCTURE:
+  Second phishing domain: login-sbi-secure[.]in
+  Exfil server IP: 91.108.4.241
+  Tor hidden service: shadow7abc3xyzqr.onion
+  Port used: 4444 (Metasploit default)
+  User-Agent: Mozilla/5.0 (ShadowBot/2.0)
+
+ATTACK TIMELINE:
+  2024-02-01: Initial phishing campaign launched
+  2024-02-03: First successful compromise at target org
+  2024-02-10: Lateral movement observed
+  2024-02-15: Data exfiltration to 91.108.4.241 via HTTPS
+  2024-03-01: Ransomware deployed across 47 endpoints
+
+RECOMMENDATIONS:
+  1. Block all listed IPs at perimeter firewall
+  2. Add listed domains to DNS blackhole / Sinkhole
+  3. Hunt for listed file hashes in EDR telemetry
+  4. Patch CVE-2024-21762 and CVE-2024-3400 immediately
+  5. Review scheduled tasks and registry run keys
+  6. Enable MFA on all administrative accounts
+
+CONFIDENCE LEVEL: HIGH
+TLDR: ShadowNova is actively targeting Indian financial infrastructure.
+      Patch immediately. Share this report with your SOC team.
+
+CONTACT: cert@example-cert.in | PGP Key available on request

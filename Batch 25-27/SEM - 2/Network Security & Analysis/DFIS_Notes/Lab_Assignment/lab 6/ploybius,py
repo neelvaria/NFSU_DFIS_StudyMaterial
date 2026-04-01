@@ -1,0 +1,49 @@
+# Polybius Cipher Encryption
+
+def create_polybius_square():
+    alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"  # J removed
+    square = {}
+    
+    index = 0
+    for row in range(1,6):
+        for col in range(1,6):
+            square[alphabet[index]] = str(row) + str(col)
+            index += 1
+            
+    return square
+
+
+def encrypt_polybius(plaintext):
+    square = create_polybius_square()
+    plaintext = plaintext.upper().replace("J","I")
+    
+    ciphertext = ""
+    
+    for char in plaintext:
+        if char in square:
+            ciphertext += square[char] + " "
+        elif char == " ":
+            ciphertext += " "
+    
+    return ciphertext
+
+
+def main():
+    
+    # Read plaintext from file
+    with open("plaintext.txt","r") as file:
+        plaintext = file.read()
+    
+    # Encrypt
+    cipher = encrypt_polybius(plaintext)
+    
+    # Write ciphertext to file
+    with open("cipher.txt","w") as file:
+        file.write(cipher)
+    
+    print("Encryption Successful!")
+    print("Ciphertext:", cipher)
+
+
+if __name__ == "__main__":
+    main()

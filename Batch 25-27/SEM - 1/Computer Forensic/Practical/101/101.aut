@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>6.0</SchemaVersion>
+  <CreatedDate>2025/12/23 10:23:56 (IST)</CreatedDate>
+  <ModifiedDate>2025/12/23 10:24:00 (IST)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.22.1</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.22.1</SavedByAutopsyVersion>
+  <Case>
+    <Name>101_20251223_102356</Name>
+    <DisplayName>101</DisplayName>
+    <Number>101</Number>
+    <Examiner/>
+    <ExaminerPhone/>
+    <ExaminerEmail/>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+  <ContentProvider>
+    <Name/>
+  </ContentProvider>
+  <OriginalCase/>
+</AutopsyCase>

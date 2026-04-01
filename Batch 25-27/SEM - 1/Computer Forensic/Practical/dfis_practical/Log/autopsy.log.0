@@ -1,0 +1,42 @@
+2025-12-23 17:18:02.317 org.sleuthkit.autopsy.centralrepository.datamodel.RdbmsCentralRepo upgradeSchema
+INFO: Central Repository is up to date
+2025-12-23 17:18:02.45 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Starting local Solr SOLR8 server
+2025-12-23 17:18:02.456 org.sleuthkit.autopsy.keywordsearch.Server isLocalSolrRunning
+INFO: Solr server is running
+2025-12-23 17:18:02.457 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Local Solr SOLR8 server is already running
+2025-12-23 17:18:02.46 org.sleuthkit.autopsy.keywordsearch.Server isLocalSolrRunning
+INFO: Solr server is running
+2025-12-23 17:18:03.714 org.sleuthkit.autopsy.keywordsearch.Server$Collection <init>
+INFO: Using Solr document queue size = 30
+2025-12-23 17:18:04.326 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.49.1.0 loaded in native mode
+2025-12-23 17:18:04.363 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened dfis_practical (dfis_practical_20251223_151937) in D:\nfsu_dfis_resources\Batch 25-27\SEM - 1\Computer Forensic\Practical\dfis_practical as the current case
+2025-12-23 17:18:04.363 org.sleuthkit.autopsy.progress.LoggingProgressIndicator progress
+INFO: Retrieving images for case: autopsy.db...
+2025-12-23 17:18:04.364 org.sleuthkit.autopsy.progress.LoggingProgressIndicator progress
+INFO: Opening all filesystems for image: drive7.E01...
+2025-12-23 17:32:22.812 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Stopping Solr 8 server
+2025-12-23 17:32:22.813 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Setting Solr 8 directory: C:\Program Files\Autopsy-4.22.1\autopsy\solr
+2025-12-23 17:32:22.813 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Running Solr 8 command: [C:\Program Files\Autopsy-4.22.1\autopsy\solr\bin\autopsy-solr.cmd, stop, -k, jjk#09s, -p, 23232] from C:\Program Files\Autopsy-4.22.1\autopsy\solr
+2025-12-23 17:32:22.818 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Finished running Solr 8 command
+2025-12-23 17:32:22.818 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Waiting for Solr server to stop
+2025-12-23 17:32:23.344 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Finished stopping Solr server
+2025-12-23 17:32:23.344 org.sleuthkit.autopsy.core.Installer <init>
+INFO: core installer created
+2025-12-23 17:32:23.371 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case dfis_practical (dfis_practical_20251223_151937) in D:\nfsu_dfis_resources\Batch 25-27\SEM - 1\Computer Forensic\Practical\dfis_practical
+2025-12-23 17:32:25.376 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Shutting down image gallery controller for case dfis_practical (dfis_practical_20251223_151937)
+2025-12-23 17:32:25.382 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB close
+INFO: Closing the drawable.db
+2025-12-23 17:32:25.382 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Completed shut down of image gallery controller for case dfis_practical (dfis_practical_20251223_151937)

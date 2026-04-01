@@ -1,0 +1,857 @@
+***Hive Check***
+Hive is not dirty.
+
+acmru v.20080324
+- Gets contents of user's ACMru key
+
+Software\Microsoft\Search Assistant\ACMru not found.
+----------------------------------------
+adoberdr v.20150717
+(NTUSER.DAT) Gets user's Adobe Reader cRecentFiles values
+
+Adoberdr v.20150717
+Adobe Acrobat Reader version not found.
+----------------------------------------
+ahaha v.20131009
+(Software,NTUSER.DAT) Detect possible presence of ahaha malware
+
+No indicators found.
+----------------------------------------
+aim v.20080325
+(NTUSER.DAT) Gets info from the AOL Instant Messenger (not AIM) install
+
+Software\America Online\AOL Instant Messenger (TM)\CurrentVersion\Users not found.
+----------------------------------------
+aports v.20110204
+(NTUSER.DAT) Extracts the install path for SmartLine Inc. Active Ports.
+
+Software\SmartLine Vision\aports not found.
+
+----------------------------------------
+appassoc v.20190513
+- Gets contents of user's ApplicationAssociationToasts key
+
+Software\Microsoft\Windows\CurrentVersion\ApplicationAssociationToasts not found.
+----------------------------------------
+appcompatflags v.20130930
+(NTUSER.DAT, Software) Extracts AppCompatFlags for Windows.
+
+
+----------------------------------------
+appkeys v.20180920
+(NTUSER.DAT, Software) Extracts AppKeys entries.
+
+----------------------------------------
+applets v.20140723
+(NTUSER.DAT) Gets contents of user's Applets key
+
+Software\Microsoft\Windows\CurrentVersion\Applets not found.
+----------------------------------------
+Software\Microsoft\IntelliPoint\AppSpecific not found.
+----------------------------------------
+Software\Ares not found.
+----------------------------------------
+arpcache v.20090413
+(NTUSER.DAT) Retrieves CurrentVersion\App Management\ARPCache entries
+
+Software\Microsoft\Windows\CurrentVersion\App Management\ARPCache not found.
+----------------------------------------
+attachmgr v.20130425
+(NTUSER.DAT) Checks user's keys that manage the Attachment Manager functionality
+
+Software\Microsoft\Windows\CurrentVersion\Policies\Associations not found.
+
+Software\Microsoft\Windows\CurrentVersion\Policies\Attachments not found.
+
+----------------------------------------
+autoendtasks v.20081128
+(NTUSER.DAT) Automatically end a non-responsive task
+
+Control Panel\Desktop not found.
+----------------------------------------
+autorun v.20081212
+(NTUSER.DAT) Gets autorun settings
+
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer not found.
+----------------------------------------
+bitbucket_user v.20091020
+(NTUSER.DAT) TEST - Get user BitBucket values
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket not found.
+----------------------------------------
+brisv v.20130429
+(NTUSER.DAT) Detect artifacts of a Troj.Brisv.A infection
+
+Software\Microsoft\PIMSRV not found.
+----------------------------------------
+cached v.20150608
+(NTUSER.DAT) Gets cached Shell Extensions from NTUSER.DAT hive
+
+Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached not found.
+----------------------------------------
+cain v.20110204
+(NTUSER.DAT) Extracts details for Cain & Abel by oxid.it
+
+Software\Cain\Settings not found.
+
+----------------------------------------
+ccleaner v.20120128
+(NTUSER.DAT) Gets User's CCleaner Settings
+
+Software\Piriform\CCleaner does not exist.
+
+----------------------------------------
+cdstaginginfo v.20131118
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\CD Burning\StagingInfo not found.
+----------------------------------------
+clampi v.20091019
+(NTUSER.DAT) TEST - Checks for keys set by Trojan.Clampi PROT module
+
+Software\Microsoft\Internet Explorer\Main not found.
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete not found.
+
+Software\Microsoft\Internet Account Manager\Accounts not found.
+
+The system does not appear to have been infected with the Trojan.Clampi
+PROT module.
+----------------------------------------
+clampitm v.20100624
+(NTUSER.DAT) Checks for IOCs for Clampi (per Trend Micro)
+
+Software\Microsoft\Internet Explorer\Settings not found.
+----------------------------------------
+cmdproc v.20190223
+(NTUSER.DAT) Autostart - get Command Processor\AutoRun value from NTUSER.DAT hive
+
+Software\Microsoft\Command Processor not found.
+----------------------------------------
+----------------------------------------
+compdesc v.20080324
+(NTUSER.DAT) Gets contents of user's ComputerDescriptions key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\ComputerDescriptions not found.
+----------------------------------------
+controlpanel v.20080428
+(NTUSER.DAT) Look for RecentTask* values in ControlPanel key (Vista)
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel not found.
+----------------------------------------
+cortana v20150628 (Search terms from Cortana/search bar)
+  SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts not found.
+----------------------------------------
+cpldontload v.20100116
+(NTUSER.DAT) Gets contents of user's Control Panel don't load key
+
+Control Panel\don't load not found.
+----------------------------------------
+DDO v.20140414
+(NTUSER.DAT) Gets user's DeviceDisplayObjects key contents
+
+Software\Microsoft\Windows NT\CurrentVersion\DeviceDisplayObjects not found.
+----------------------------------------
+decaf v.20110210
+(NTUSER.DAT) Extracts the EULA value for DECAF.
+
+Software\DECAFme not found.
+
+----------------------------------------
+dependency_walker v.20110204
+(NTUSER.DAT) Extracts Recent File List for Dependency Walker.
+
+Software\Microsoft\Dependency Walker\Recent File List not found.
+
+----------------------------------------
+disablemru v.20180807
+- Checks settings disabling user's MRUs
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced not found.
+Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32 not found.
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer not found.
+----------------------------------------
+domains v.20100116
+(NTUSER.DAT) Gets contents Internet Settings\ZoneMap\Domains key
+
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap not found.
+----------------------------------------
+environment v.20150910
+(NTUSER.DAT) Extracts user's Environment paths from NTUSER.DAT
+
+Environment not found.
+
+----------------------------------------
+Eraser v.20180708
+(NTUSER.DAT) Gets User's Eraser Settings
+
+Software\Eraser\Eraser 6 does not exist.
+
+----------------------------------------
+fileexts v.20080818
+(NTUSER.DAT) Get user FileExts values
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts not found.
+----------------------------------------
+filehistory v.20120620
+(NTUSER.DAT) Gets filehistory settings
+
+Software\Microsoft\Windows\CurrentVersion\FileHistory not found.
+----------------------------------------
+foxitrdr v.20170326
+(NTUSER.DAT) Get values from the user's Foxit Reader key
+
+Foxit Reader version not found.
+----------------------------------------
+gthist v.20100218
+(NTUSER.DAT) Gets Google Toolbar Search History
+
+Software\Google\NavClient\1.1\History not found.
+----------------------------------------
+gtwhitelist v.20100218
+(NTUSER.DAT) Gets Google Toolbar whitelist values
+
+Software\Google\Google Toolbar\4.0\whitelist not found.
+----------------------------------------
+haven_and_hearth v.20110204
+(NTUSER.DAT) Extracts the username and savedtoken for Haven & Hearth.
+
+Software\JavaSoft\Prefs\haven not found.
+
+----------------------------------------
+identities v.20151211
+(NTUSER.DAT) Extracts values from Identities key; NTUSER.DAT
+
+Identities not found.
+
+----------------------------------------
+iejava v.20130429
+(NTUSER.DAT) Checks NTUSER for status of kill bit for IE Java ActiveX control
+
+Software\Microsoft\Windows\CurrentVersion\Ext\Settings\{8AD9C840-044E-11D1-B3E9-00805F499D93} not found.
+----------------------------------------
+ie_main v.20091019
+(NTUSER.DAT) Gets values beneath user's Internet Explorer\Main key
+
+Software\Microsoft\Internet Explorer\Main not found.
+----------------------------------------
+ie_settings v.20130731
+(NTUSER.DAT) Gets important user IE settings
+
+Software\Microsoft\Windows\CurrentVersion\Internet Settings not found.
+----------------------------------------
+ie_zones v.20140611
+(NTUSER.DAT,Software) Get IE Zone settings
+
+----------------------------------------
+imgburn1 v20180630 (Gets user's ImgBurn MRU files and paths from NTUSER)
+Software\ImgBurn not found.
+----------------------------------------
+internet_explorer_cu v.20120528
+(NTUSER.DAT) Get HKCU information on Internet Explorer
+
+Software\Microsoft\Internet Explorer not found.
+----------------------------------------
+internet_settings_cu v.20120528
+(NTUSER.DAT) Get HKCU information on Internet Settings
+
+Software\Microsoft\Windows\CurrentVersion\Internet Settings not found.
+----------------------------------------
+itempos v.20130514
+(NTUSER.DAT) Shell/Bags/1/Desktop ItemPos* value parsing; Win7 NTUSER.DAT hives
+
+Software\Microsoft\Windows\Shell\Bags\1\Desktop not found.
+Software\Microsoft\Windows\ShellNoRoam\Bags not found.
+----------------------------------------
+javafx v.20110322
+(NTUSER.DAT) Gets contents of user's JavaFX key
+
+Software\JavaSoft\Java Update\Policy\JavaFX not found.
+----------------------------------------
+jumplistdata v.20180611
+- Gets contents of user's JumpListData key
+
+Software\Microsoft\Windows\CurrentVersion\Search\JumpListData not found.
+----------------------------------------
+kankan v.20131011
+(NTUSER.DAT, Software) Extracts Office app Addin Settings
+
+Tip: At least one identified variant of Win32/KanKan creates an Addin named
+InputEnhance.Connect
+----------------------------------------
+knowndev v.20190714
+(NTUSER.DAT) Gets user's KnownDevices key contents
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\KnownDevices not found.
+----------------------------------------
+latentbot v.20151213
+(NTUSER.DAT) Check NTUSER.DAT for indications of LatentBot
+
+
+----------------------------------------
+listsoft v.20080324
+(NTUSER.DAT) Lists contents of user's Software key
+
+listsoft v.20080324
+List the contents of the Software key in the NTUSER.DAT hive
+file, in order by LastWrite time.
+
+Tue Jul 14 05:38:15 2009Z 	Microsoft
+----------------------------------------
+liveContactsGUID v.20110221
+(NTUSER.DAT) Gets user Windows Live Messenger GUIDs
+
+Software\Microsoft\Windows Live Contacts\Database not found.
+----------------------------------------
+load v.20100811
+(NTUSER.DAT) Gets load and run values from user hive
+
+Software\Microsoft\Windows NT\CurrentVersion\Windows not found.
+----------------------------------------
+logonstats v.20180128
+- Gets contents of user's LogonStats key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\LogonStats not found.
+----------------------------------------
+logonusername v.20080324
+(NTUSER.DAT) Get user's Logon User Name value
+
+Software\Microsoft\Windows\CurrentVersion\Explorer not found.
+----------------------------------------
+menuorder v.20121005
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder not found.
+----------------------------------------
+mixer v.20141112
+(NTUSER.DAT) Checks user's audio mixer settings
+
+----------------------------------------
+mmc v.20080324
+(NTUSER.DAT) Get contents of user's MMC\Recent File List key
+
+Software\Microsoft\Microsoft Management Console\Recent File List not found.
+----------------------------------------
+mmo v.20130217
+(NTUSER.DAT) Checks NTUSER for Multimedia\Other values [malware]
+
+Software\Microsoft\Multimedia\Other not found.
+Software\Microsoft\CTF\LangBarAddIn not found.
+----------------------------------------
+mndmru v.20080324
+(NTUSER.DAT) Get contents of user's Map Network Drive MRU
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\Map Network Drive MRU not found.
+----------------------------------------
+mp2 v.20120330
+(NTUSER.DAT) Gets user's MountPoints2 key contents
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2 not found.
+----------------------------------------
+mp3 v.20120330
+(NTUSER.DAT) Gets user's MountPoints2 key contents
+
+----------------------------------------
+mpmru v.20080324
+(NTUSER.DAT) Gets user's Media Player RecentFileList values
+
+Software\Microsoft\MediaPlayer\Player\RecentFileList not found.
+----------------------------------------
+mspaper v.20080324
+(NTUSER.DAT) Gets images listed in user's MSPaper key
+
+SOFTWARE\Microsoft\MSPaper* not found.
+----------------------------------------
+muicache v.20130425
+(NTUSER.DAT,USRCLASS.DAT) Gets EXEs from user's MUICache key
+
+Software\Microsoft\Windows\ShellNoRoam\MUICache not found.
+
+Local Settings\Software\Microsoft\Windows\Shell\MUICache not found.
+----------------------------------------
+mzthunderbird v.20180712
+(NTUSER.DAT) Gets Thunderbird profile data
+
+Software\Microsoft\Windows\CurrentVersion\UnreadMail not found.
+----------------------------------------
+nation v.20091116
+(ntuser.dat) Gets region information from HKCU
+
+Nation Information Check
+Control Panel\International\Geo
+LastWrite Time Tue Jul 14 05:38:15 2009 (UTC)
+
+The Region value is : 244
+The Country Is: United States
+For more information please visit the link below:
+https://msdn.microsoft.com/en-us/library/aa723531.aspx
+
+----------------------------------------
+nero v.20100218
+(NTUSER.DAT) Gets contents of Ahead\Nero Recent File List subkeys
+
+Software\Ahead not found.
+----------------------------------------
+netassist v.20110427
+(NTUSER.DAT) Check for Firefox Extensions.
+
+Software\Mozilla\Firefox\Extensions not found.
+Software\Microsoft\Windows\CurrentVersion\Uninstall\NetAssistant not found.
+Software\Microsoft\Installer\Products\D4676621F4CF7AF46BB388D4351B86F0 not found.
+Software\Microsoft\Installer\Products\D4676621F4CF7AF46BB388D4351B86F0\SourceList not found.
+
+----------------------------------------
+ntusernetwork v.20110601
+(NTUSER.DAT) Returns contents of user's Network subkeys
+
+Network key not found.
+----------------------------------------
+odysseus v.20110202
+(NTUSER.DAT) Extract registry keys for Odysseus by bindshell.net.
+
+Software\bindshell.net\Odysseus not found.
+
+----------------------------------------
+officedocs v.20080324
+(NTUSER.DAT) Gets contents of user's Office doc MRU keys
+
+officedocs v.20080324
+MSOffice version not found.
+----------------------------------------
+officedocs2010 v.2011090
+(NTUSER.DAT) Gets user's Office 2010 doc MRU values
+
+MSOffice version not found.
+----------------------------------------
+----------------------------------------
+oisc v.20091125
+(NTUSER.DAT) Gets contents of user's Office Internet Server Cache
+
+MSOffice version not found.
+----------------------------------------
+olsearch v.20130124
+(NTUSER.DAT) Gets contents of user's OutLook Searches
+
+Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles\Outlook\0a0d020000000000c000000000000046 not found.
+----------------------------------------
+OSVersion
+Software\Microsoft
+LastWrite Time Tue Jul 14 05:38:15 2009 (UTC)
+
+OSVersion value not found.
+----------------------------------------
+outlook v.20100218
+(NTUSER.DAT) Gets user's Outlook settings
+
+Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles not found.
+----------------------------------------
+outlook2 v.20130308
+(NTUSER.DAT) Gets MAPI (Outlook) settings *BETA*
+
+Working path is ''
+
+Outlook key not found
+----------------------------------------
+policies_u v.20091021
+(NTUSER.DAT) Get values from the user's Policies key
+
+Neither policies nor Policies key found.
+----------------------------------------
+printermru v.20091125
+(NTUSER.DAT) Gets user's Printer Wizard MRU listing
+
+Printers\Settings\Wizard\ConnectMRU not found.
+----------------------------------------
+printers v.20090223
+(NTUSER.DAT) Get user's printers
+
+Software\Microsoft\Windows NT\CurrentVersion\PrinterPorts not found.
+----------------------------------------
+privoxy v.20110204
+(NTUSER.DAT) Extracts the install path for Privoxy.
+
+Software\Privoxy not found.
+
+----------------------------------------
+profiler v.20140510
+(NTUSER.DAT, System) Environment profiler information
+
+
+----------------------------------------
+proxysettings v.20081224
+(NTUSER.DAT) Gets contents of user's Proxy Settings
+
+Software\Microsoft\Windows\CurrentVersion\Internet Settings hat key not found.
+----------------------------------------
+pslogging v.20181209
+(NTUSER.DAT, Software) Extracts PowerShell logging settings
+
+Software\Policies\Microsoft\Windows\PowerShell not found.
+Policies\Microsoft\Windows\PowerShell not found.
+----------------------------------------
+publishingwizard v.20110202
+(NTUSER.DAT) Extract AddNetPlace\LocationMRU for Microsoft Publishing Wizard
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\PublishingWizard\AddNetworkPlace\AddNetPlace\LocationMRU not found.
+
+----------------------------------------
+putty v.20110204
+(NTUSER.DAT) Extracts the saved SshHostKeys for PuTTY.
+
+Software\SimonTatham\PuTTY\SshHostKeys not found.
+
+----------------------------------------
+putty_sessions v.20170321
+(NTUSER.DAT) Extracts the saved sessions for PuTTY.
+
+Software\SimonTatham\PuTTY\Sessions not found.
+
+----------------------------------------
+rdphint v.20090715
+(NTUSER.DAT) Gets hosts logged onto via RDP and the Domain\Username
+
+Software\Microsoft\Terminal Server Client\Servers not found.
+----------------------------------------
+reading_locations v.20140130
+(NTUSER.DAT) Gets user's MS Word 2013 Reading Locations
+
+Software\Microsoft\Office\15.0\Word\Reading Locations not found.
+----------------------------------------
+realplayer6 v.20080324
+(NTUSER.DAT) Gets user's RealPlayer v6 MostRecentClips(Default) values
+
+Software\RealNetworks\RealPlayer\6.0\Preferences not found.
+----------------------------------------
+realvnc v.20091125
+(NTUSER.DAT) Gets user's RealVNC MRU listing
+
+Software\RealVNC\VNCViewer4\MRU not found.
+----------------------------------------
+recentapps v.20171013
+- Gets contents of user's RecentApps key
+
+Software\Microsoft\Windows\CurrentVersion\Search\RecentApps not found.
+----------------------------------------
+recentdocs v.20100405
+(NTUSER.DAT) Gets contents of user's RecentDocs key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs not found.
+----------------------------------------
+recentdocs_timeline v.20161112
+(NTUSER.DAT) Gets contents of user's RecentDocs key and place last write times into timeline based on MRUListEx
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs not found.
+----------------------------------------
+reveton v.20131010
+Checks for possible Reveton infection
+
+Software\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Microsoft\Internet Explorer\Main not found.
+Software\Microsoft\Internet Explorer\Toolbar not found.
+Checking Internet Zones Settings...
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0 not found.
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1 not found.
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2 not found.
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3 not found.
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4 not found.
+Checking Task Manager Setting...
+Software\Microsoft\Windows\CurrentVersion\Policies\System\ not found.
+
+Checking HideIcons Setting...
+Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ not found.
+
+Final Score: 0/6 checks succeeded.
+----------------------------------------
+rootkit_revealer v.20110204
+(NTUSER.DAT) Extracts the EULA value for Sysinternals Rootkit Revealer.
+
+Software\Sysinternals\RootkitRevealer not found.
+
+----------------------------------------
+runmru v.20080324
+(NTUSER.DAT) Gets contents of user's RunMRU key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU not found.
+----------------------------------------
+searchscopes v.20180406
+- Gets contents of user's SearchScopes key
+
+Software\Microsoft\Internet Explorer\SearchScopes not found.
+----------------------------------------
+Software\7-Zip not found.
+Software\Wow6432Node\7-Zip not found.
+----------------------------------------
+shc v.20190305
+(NTUSER.DAT) Gets SHC entries from user hive
+
+Software\Microsoft\Windows\CurrentVersion\UFH\SHC not found.
+----------------------------------------
+shellactivities v.20180709
+- Gets contents of user's ShellActivities key
+
+Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount\$$windows.data.taskflow.shellactivities\Current not found.
+----------------------------------------
+shellbags_xp v.20130102
+(NTUSER.DAT) Shell/BagMRU traversal in XP NTUSER.DAT hives
+
+Software\Microsoft\Windows\ShellNoRoam\BagMRU not found.
+----------------------------------------
+shellfolders v.20090115
+(NTUSER.DAT) Retrieve user Shell Folders values
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders not found.
+----------------------------------------
+Software\Skype not found.
+----------------------------------------
+snapshot_viewer v.20110210
+(NTUSER.DAT) Extracts Recent File List for Microsoft Snapshot Viewer.
+
+Software\Microsoft\Snapshot Viewer\Recent File List not found.
+
+----------------------------------------
+ssh_host_keys v.20120809
+(NTUSER.DAT) Extracts Putty/WinSCP SSH Host Keys
+
+"Software\SimonTatham\Putty\SshHostKeys" does not exist
+
+"Software\Martin Prikryl\WinSCP 2\SshHostKeys" does not exist
+----------------------------------------
+startmenuinternetapps_cu v.20101219
+(NTUSER.DAT) Start Menu Internet Applications info current user
+
+Software\Clients not found. Check the same path in HKLM
+----------------------------------------
+startpage v.20100330
+(NTUSER.DAT) Gets contents of user's StartPage key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\StartPage not found.
+----------------------------------------
+startup v.20131028
+Gets user's Startup Folder location
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders not found.
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders not found.
+----------------------------------------
+Software\SysInternals not found.
+----------------------------------------
+thunderbirdinstalled v.20120524
+(Software,NTUSER.DAT) Shows install status of Thunderbird
+
+Microsoft\Windows\CurrentVersion\App Paths\thunderbird.exe not found.
+ Thunderbird not installed.
+WOW6432Node\Microsoft\Windows\CurrentVersion\App Paths\thunderbird.exe not found.
+ Thunderbird not installed.
+----------------------------------------
+trustrecords v.20190626
+
+**Word**
+----------
+
+**PowerPoint**
+----------
+
+**Excel**
+----------
+
+**Access**
+----------
+
+----------------------------------------
+Launching tsclient v.20120827
+(NTUSER.DAT) Displays contents of user's Terminal Server Client\Default key
+
+Software\Microsoft\Terminal Server Client\Default not found.
+
+Software\Microsoft\Terminal Server Client\Servers not found.
+----------------------------------------
+typedpaths v.20100330
+(NTUSER.DAT) Gets contents of user's typedpaths key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths not found.
+----------------------------------------
+typedurls v.20080324
+(NTUSER.DAT) Returns contents of user's TypedURLs key.
+
+Software\Microsoft\Internet Explorer\TypedURLs not found.
+----------------------------------------
+typedurlstime v.20120613
+(NTUSER.DAT) Returns contents of user's TypedURLsTime key.
+
+Software\Microsoft\Internet Explorer\TypedURLsTime not found.
+----------------------------------------
+uninstall v.20140512
+(Software, NTUSER.DAT) Gets contents of Uninstall keys from Software, NTUSER.DAT hives
+
+Uninstall
+----------------------------------------
+unreadmail v.20100218
+(NTUSER.DAT) Gets contents of Unreadmail key
+
+Software\Microsoft\Windows\CurrentVersion\UnreadMail not found.
+----------------------------------------
+Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist not found.
+----------------------------------------
+userinfo v.20130513
+(NTUSER.DAT) Gets contents of MS Office UserInfo values
+
+Software\Microsoft\Office\Common not found.
+
+Software\Microsoft\Office\Common\UserInfo not found.
+
+Software\Microsoft\Office\11\.0\Common\UserInfo not found.
+
+----------------------------------------
+userlocsvc v.20090411
+(NTUSER.DAT) Displays contents of User Location Service\Client key
+
+Software\Microsoft\User Location Service\Client not found.
+----------------------------------------
+user_run v.20140115
+(NTUSER.DAT) [Autostart] Get autostart key contents from NTUSER.DAT hive
+
+Software\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Microsoft\Windows\CurrentVersion\RunOnce not found.
+
+Software\Microsoft\Windows\CurrentVersion\RunServices not found.
+
+Software\Microsoft\Windows\CurrentVersion\RunServicesOnce not found.
+
+Software\Microsoft\Windows NT\CurrentVersion\Terminal Server\Install\Software\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Microsoft\Windows NT\CurrentVersion\Terminal Server\Install\Software\Microsoft\Windows\CurrentVersion\RunOnce not found.
+
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run not found.
+
+Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run not found.
+
+----------------------------------------
+user_win v.20080415
+(NTUSER.DAT)  -- 
+
+Software\Microsoft\Windows NT\CurrentVersion\Windows not found.
+----------------------------------------
+utorrent v20180615 (Shows uTorrent client install path, version and Unique ID of computer)
+  Software\Microsoft\Windows\CurrentVersion\Uninstall\uTorrent not found.
+  Software\BitTorrent not found.
+----------------------------------------
+vawtrak v.20131010
+Checks for possible VawTrak infection
+
+Software\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Microsoft\Internet Explorer\Main not found.
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3 not found.
+Final Score: 0/4 checks succeeded.
+----------------------------------------
+vista_bitbucket v.20080420
+(NTUSER.DAT) Get BitBucket settings from Vista via NTUSER.DAT
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket not found.
+----------------------------------------
+vmplayer v.20110204
+(NTUSER.DAT) Extracts full filepath for recent VMware Player VM images.
+
+Software\VMware, Inc.\VMware Player\VMplayer\Window position not found.
+
+----------------------------------------
+vmware_vsphere_client v.20110204
+(NTUSER.DAT) Extract recent connections list for VMware vSphere Client.
+
+Software\VMware\Virtual Infrastructure Client\Preferences\UI\ClientsXml not found.
+Software\VMware\VMware Infrastructure Client\Preferences not found.
+
+----------------------------------------
+vnchookapplicationprefs v.20110208
+(NTUSER.DAT) Get VNCHooks Application Prefs list
+
+Software\ORL\VNCHooks\Application_Prefs not found.
+----------------------------------------
+vncviewer v.20121231
+(NTUSER.DAT) Get VNCViewer system list
+
+Software\ORL\VNCviewer\MRU not found.
+Software\RealVNC\VNCViewer4\MRU not found.
+----------------------------------------
+wallpaper v.200800810
+(NTUSER.DAT) Parses Wallpaper MRU Entries
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpaper\MRU not found.
+----------------------------------------
+warcraft3 v.20110202
+(NTUSER.DAT) Extract usernames for Warcraft 3.
+
+Software\Blizzard Entertainment\Warcraft III\String not found.
+
+----------------------------------------
+winlogon_u v.20130425
+(NTUSER.DAT) Get values from the user's WinLogon key
+
+Software\Microsoft\Windows NT\CurrentVersion\Winlogon not found.
+Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Winlogon not found.
+Analysis Tip: Existence of RunGrpConv = 1 value may indicate that the
+  system had been infected with Bredolab (Symantec).  Also, check the
+  contents of a "shell" value - should only include Explorer.exe, if
+  it exists.
+----------------------------------------
+winrar v.20080819
+(NTUSER.DAT) Get WinRAR\ArcHistory entries
+
+Software\WinRAR\ArcHistory not found.
+----------------------------------------
+winrar2 v.20150820
+(NTUSER.DAT) Get WinRAR\ArcHistory, WinRAR\DialogEditHistory\ArcName, WinRAR\DialogEditHistory\ExtrPath entries
+
+---------------------------------------------------------------------------------
+Software\WinRAR\ArcHistory not found.
+Analysis Tip: The values relate to the recently accessed files using the WinRAR program.
+---------------------------------------------------------------------------------
+
+Software\WinRAR\DialogEditHistory\ArcName not found.
+Analysis Tip: The values relate to the dropdown list in the "Add" menu. As a result this can used to determine the file name (and sometimes path) of a file that has been appended or created.
+---------------------------------------------------------------------------------
+
+Software\WinRAR\DialogEditHistory\ExtrPath not found.
+Analysis Tip: These values relate to the dropdown list in the "Extract" menu. They show where a compressed file was extracted to.
+----------------------------------------
+winspc v.20140203
+(NTUSER.DAT) Gets user's WinSCP 2 data
+
+Software\Martin Prikryl\WinSCP 2 not found.
+----------------------------------------
+winscp_sessions v.20120809
+(NTUSER.DAT) Extracts WinSCP stored session data
+
+"Software\Martin Prikryl\WinSCP 2\Sessions" does not exist
+----------------------------------------
+winvnc v.20110202
+(NTUSER.DAT) Extracts the encrypted password for WinVNC.
+
+Software\ORL\WinVNC3 not found.
+Software\ORL\WinVNC3\Default not found.
+Software\ORL\WinVNC\Default not found.
+Software\RealVNC\WinVNC4 not found.
+Software\RealVNC\Default not found.
+
+----------------------------------------
+winzip v.20140730
+(NTUSER.DAT) Get WinZip extract and filemenu values
+
+Software\Nico Mak Computing\WinZip not found.
+----------------------------------------
+wordwheelquery v.20100330
+(NTUSER.DAT) Gets contents of user's WordWheelQuery key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery not found.
+----------------------------------------
+yahoo_cu v.20101219
+(NTUSER.DAT) Yahoo Messenger parser
+
+Software\Yahoo\pager not found.
+----------------------------------------

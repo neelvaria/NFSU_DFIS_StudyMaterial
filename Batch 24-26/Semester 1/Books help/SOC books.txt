@@ -1,0 +1,10 @@
+Designing and Building Security Operations Center 1st Edition-by David Nathans
+
+Open-Source Security Operations Center (SOC)-By Alfred Basta, Nadine Basta, Waqar Anwar 
+
+
+Security Operations Center: Building, Operating and Maintaining your SOC-By Joey Muniz, Gary McIntyre and Nadhem AlFardan
+
+The Modern Security Operations Center: The People, Process, and Technology for Operating SOC Services-By Joseph Muniz, Aamir Lakhani, Omar Santos
+
+ChatGPT for SOC Analyst - Master Cyber Security with AI-By Pavel Hrabec

@@ -1,0 +1,49 @@
+<WinVersion>
+<mtime></mtime>
+<artifacts>
+<winver name="ProductName">Windows 7 Professional</winver>
+<winver name="InstallDate">Thu Feb 27 05:50:02 2014</winver>
+<winver name="RegisteredOwner">Ggraves</winver>
+<winver name="RegisteredOrganization"></winver>
+<winver name="SystemRoot">C:\Windows</winver>
+<winver name="ProductId">55041-089-0789182-86150</winver>
+</artifacts></WinVersion>
+----------------------------------------
+<uninstall>
+<artifacts>
+<item mtime="Thu Feb 27 05:31:25 2014">DXM_Runtime</item>
+<item mtime="Thu Feb 27 05:31:25 2014">MPlayer2</item>
+<item mtime="Tue Jul 14 04:53:26 2009">AddressBook</item>
+<item mtime="Tue Jul 14 04:53:26 2009">Connection Manager</item>
+<item mtime="Tue Jul 14 04:53:26 2009">DirectDrawEx</item>
+<item mtime="Tue Jul 14 04:53:26 2009">Fontcore</item>
+<item mtime="Tue Jul 14 04:53:26 2009">IE40</item>
+<item mtime="Tue Jul 14 04:53:26 2009">IE4Data</item>
+<item mtime="Tue Jul 14 04:53:26 2009">IE5BAKEX</item>
+<item mtime="Tue Jul 14 04:53:26 2009">IEData</item>
+<item mtime="Tue Jul 14 04:53:26 2009">MobileOptionPack</item>
+<item mtime="Tue Jul 14 04:53:26 2009">SchedulingAgent</item>
+<item mtime="Tue Jul 14 04:53:26 2009">WIC</item>
+<item mtime="Thu Feb 27 06:00:48 2014">Microsoft Office Professional Edition 2003 v.11.0.5614.0</item>
+<item mtime="Tue Jul 14 04:53:25 2009">AddressBook</item>
+<item mtime="Tue Jul 14 04:53:25 2009">Connection Manager</item>
+<item mtime="Tue Jul 14 04:53:25 2009">DirectDrawEx</item>
+<item mtime="Tue Jul 14 04:53:25 2009">Fontcore</item>
+<item mtime="Tue Jul 14 04:53:25 2009">IE40</item>
+<item mtime="Tue Jul 14 04:53:25 2009">IE4Data</item>
+<item mtime="Tue Jul 14 04:53:25 2009">IE5BAKEX</item>
+<item mtime="Tue Jul 14 04:53:25 2009">IEData</item>
+<item mtime="Tue Jul 14 04:53:25 2009">MobileOptionPack</item>
+<item mtime="Tue Jul 14 04:53:25 2009">SchedulingAgent</item>
+<item mtime="Tue Jul 14 04:53:25 2009">WIC</item>
+</artifacts></uninstall>
+----------------------------------------
+<ProfileList>
+<mtime></mtime>
+<artifacts>
+<user sid="S-1-5-18" username="systemprofile">%systemroot%\system32\config\systemprofile</user>
+<user sid="S-1-5-19" username="LocalService">C:\Windows\ServiceProfiles\LocalService</user>
+<user sid="S-1-5-20" username="NetworkService">C:\Windows\ServiceProfiles\NetworkService</user>
+<user sid="S-1-5-21-1212894865-876620117-1625565741-1000" username="Ggraves">C:\Users\Ggraves</user>
+</artifacts></ProfileList>
+----------------------------------------

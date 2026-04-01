@@ -1,0 +1,14 @@
+
+Source path	: D:\nfsu_dfis_resources\Batch 25-27\SEM - 1\Computer Forensic\drive7.E01
+Source type	: storage media image
+Processing time	: 00:00:00
+
+Processing started.
+Worker_00 (PID: 27484) - events produced: 319 - file: TSK:/Windows/system32/config/RegBack/SECURITY - running: True
+Worker_01 (PID: 27256) - events produced: 164 - file: TSK:/Users/Default/Documents/My Videos - running: True
+Worker_00 (PID: 27484) - events produced: 319 - file: TSK:/Windows/system32/config/RegBack/SECURITY - running: True
+Worker_01 (PID: 27256) - events produced: 421 - file: TSK:/Windows/system32/config/systemprofile/AppData/LocalLow/Microsoft/CryptnetUrlCache/MetaData/7B2238AACCEDC3F1FFE8E7EB5F575EC9 - running: True
+Worker_00 (PID: 27484) - events produced: 515 - file: TSK:/Windows/system32/config/systemprofile/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/JS3I807P/desktop.ini - running: True
+Worker_01 (PID: 27256) - events produced: 421 - file: TSK:/Windows/system32/config/systemprofile/AppData/LocalLow/Microsoft/CryptnetUrlCache/MetaData/7B2238AACCEDC3F1FFE8E7EB5F575EC9 - running: True
+Processing completed.
+

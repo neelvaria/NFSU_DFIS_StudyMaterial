@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>6.0</SchemaVersion>
+  <CreatedDate>2026/02/07 14:31:45 (IST)</CreatedDate>
+  <ModifiedDate>2026/02/07 14:31:49 (IST)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.22.1</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.22.1</SavedByAutopsyVersion>
+  <Case>
+    <Name>10101_20260207_143145</Name>
+    <DisplayName>10101</DisplayName>
+    <Number>10101</Number>
+    <Examiner>Varia Neel</Examiner>
+    <ExaminerPhone>9876512345</ExaminerPhone>
+    <ExaminerEmail/>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+  <ContentProvider>
+    <Name/>
+  </ContentProvider>
+  <OriginalCase/>
+</AutopsyCase>

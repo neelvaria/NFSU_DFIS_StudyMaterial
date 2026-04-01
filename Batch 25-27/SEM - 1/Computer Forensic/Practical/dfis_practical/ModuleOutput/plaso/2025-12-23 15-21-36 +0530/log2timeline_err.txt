@@ -1,0 +1,3 @@
+2025-12-23 15:21:43,385 [INFO] (MainProcess) PID:24332 <engine> Preprocessing detected operating systems: Windows
+2025-12-23 15:21:59,341 [WARNING] (MainProcess) PID:24332 <engine> Terminating process: Worker_01 (PID: 27256).
+2025-12-23 15:21:59,769 [INFO] (MainProcess) PID:24332 <zeromq_queue> Queue main_task_queue responder exiting.

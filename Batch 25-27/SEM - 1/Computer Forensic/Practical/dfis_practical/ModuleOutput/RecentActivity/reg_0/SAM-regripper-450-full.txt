@@ -1,0 +1,172 @@
+***Hive Check***
+Hive is not dirty.
+
+samparse v.20160203
+(SAM) Parse SAM file for user & group mbrshp info
+
+
+User Information
+-------------------------
+Username        : Administrator [500]
+SID             : S-1-5-21-1212894865-876620117-1625565741-500
+Full Name       : 
+User Comment    : Built-in account for administering the computer/domain
+Account Type    : Default Admin User
+Account Created : Thu Feb 27 05:48:50 2014 Z
+Name            :  
+Last Login Date : Tue Jul 14 05:08:59 2009 Z
+Pwd Reset Date  : Tue Jul 14 05:13:36 2009 Z
+Pwd Fail Date   : Never
+Login Count     : 1
+  --> Password does not expire
+  --> Account Disabled
+  --> Normal user account
+
+Username        : Guest [501]
+SID             : S-1-5-21-1212894865-876620117-1625565741-501
+Full Name       : 
+User Comment    : Built-in account for guest access to the computer/domain
+Account Type    : Default Guest Acct
+Account Created : Thu Feb 27 05:48:50 2014 Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Never
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Password does not expire
+  --> Account Disabled
+  --> Password not required
+  --> Normal user account
+
+Username        : Ggraves [1000]
+SID             : S-1-5-21-1212894865-876620117-1625565741-1000
+Full Name       : 
+User Comment    : 
+Account Type    : Default Admin User
+Account Created : Thu Feb 27 05:49:56 2014 Z
+Name            :  
+Password Hint   : a
+Last Login Date : Thu Feb 27 19:02:40 2014 Z
+Pwd Reset Date  : Thu Feb 27 07:57:23 2014 Z
+Pwd Fail Date   : Never
+Login Count     : 4
+  --> Password does not expire
+  --> Password not required
+  --> Normal user account
+
+Username        : x [1001]
+SID             : S-1-5-21-1212894865-876620117-1625565741-1001
+Full Name       : x
+User Comment    : 
+Account Type    : Default Admin User
+Account Created : Thu Feb 27 07:49:58 2014 Z
+Name            :  
+Last Login Date : Thu Feb 27 18:22:10 2014 Z
+Pwd Reset Date  : Thu Feb 27 18:21:59 2014 Z
+Pwd Fail Date   : Thu Feb 27 18:21:28 2014 Z
+Login Count     : 1
+  --> Password does not expire
+  --> Normal user account
+
+Username        : HomeGroupUser$ [1003]
+SID             : S-1-5-21-1212894865-876620117-1625565741-1003
+Full Name       : HomeGroupUser$
+User Comment    : Built-in account for homegroup access to the computer
+Account Type    : Custom Limited Acct
+Account Created : Thu Feb 27 18:07:37 2014 Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Thu Feb 27 18:07:37 2014 Z
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Password does not expire
+  --> Normal user account
+
+-------------------------
+Group Membership Information
+-------------------------
+Group Name    : Users [3]
+LastWrite     : Thu Feb 27 07:49:59 2014 Z
+Group Comment : Users are prevented from making accidental or intentional system-wide changes and can run most applications
+Users :
+  S-1-5-21-1212894865-876620117-1625565741-1001
+  S-1-5-4
+  S-1-5-11
+
+Group Name    : Event Log Readers [0]
+LastWrite     : Tue Jul 14 04:45:47 2009 Z
+Group Comment : Members of this group can read event logs from local machine
+Users         : None
+
+Group Name    : Guests [1]
+LastWrite     : Thu Feb 27 05:31:23 2014 Z
+Group Comment : Guests have the same access as members of the Users group by default, except for the Guest account which is further restricted
+Users :
+  S-1-5-21-1212894865-876620117-1625565741-501
+
+Group Name    : Distributed COM Users [0]
+LastWrite     : Tue Jul 14 04:45:47 2009 Z
+Group Comment : Members are allowed to launch, activate and use Distributed COM objects on this machine.
+Users         : None
+
+Group Name    : Administrators [3]
+LastWrite     : Thu Feb 27 07:50:12 2014 Z
+Group Comment : Administrators have complete and unrestricted access to the computer/domain
+Users :
+  S-1-5-21-1212894865-876620117-1625565741-500
+  S-1-5-21-1212894865-876620117-1625565741-1001
+  S-1-5-21-1212894865-876620117-1625565741-1000
+
+Group Name    : Network Configuration Operators [0]
+LastWrite     : Thu Feb 27 05:31:53 2014 Z
+Group Comment : Members in this group can have some administrative privileges to manage configuration of networking features
+Users         : None
+
+Group Name    : Cryptographic Operators [0]
+LastWrite     : Thu Feb 27 05:31:53 2014 Z
+Group Comment : Members are authorized to perform cryptographic operations.
+Users         : None
+
+Group Name    : Power Users [0]
+LastWrite     : Thu Feb 27 05:31:53 2014 Z
+Group Comment : Power Users are included for backwards compatibility and possess limited administrative powers
+Users         : None
+
+Group Name    : Performance Log Users [0]
+LastWrite     : Tue Jul 14 04:45:46 2009 Z
+Group Comment : Members of this group may schedule logging of performance counters, enable trace providers, and collect event traces both locally and via remote access to this computer
+Users         : None
+
+Group Name    : Replicator [0]
+LastWrite     : Thu Feb 27 05:31:53 2014 Z
+Group Comment : Supports file replication in a domain
+Users         : None
+
+Group Name    : Performance Monitor Users [0]
+LastWrite     : Tue Jul 14 04:45:46 2009 Z
+Group Comment : Members of this group can access performance counter data locally and remotely
+Users         : None
+
+Group Name    : Remote Desktop Users [0]
+LastWrite     : Thu Feb 27 05:31:53 2014 Z
+Group Comment : Members in this group are granted the right to logon remotely
+Users         : None
+
+Group Name    : IIS_IUSRS [1]
+LastWrite     : Tue Jul 14 04:45:47 2009 Z
+Group Comment : Built-in group used by Internet Information Services.
+Users :
+  S-1-5-17
+
+Group Name    : Backup Operators [0]
+LastWrite     : Thu Feb 27 05:31:53 2014 Z
+Group Comment : Backup Operators can override security restrictions for the sole purpose of backing up or restoring files
+Users         : None
+
+Analysis Tips:
+ - For well-known SIDs, see http://support.microsoft.com/kb/243330
+     - S-1-5-4  = Interactive
+     - S-1-5-11 = Authenticated Users
+ - Correlate the user SIDs to the output of the ProfileList plugin
+
+----------------------------------------
