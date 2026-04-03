@@ -8,9 +8,7 @@
 
 ## 🔍 Overview
 
-A centralized repository of academic resources for  
-**Digital Forensics & Information Security (DFIS)** students at  
-National Forensic Sciences University (Goa Campus).
+A centralized repository of academic resources for **Digital Forensics & Information Security (DFIS)** students at National Forensic Sciences University (Goa Campus).
 
 This repository is curated to support structured learning, technical understanding, and exam readiness.
 
