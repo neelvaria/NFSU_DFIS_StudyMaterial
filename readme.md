@@ -36,8 +36,8 @@ GitHub: https://github.com/neelvaria
 Email: neelvaria89@gmail.com
 
 **Harsh Ahuja**
-Github: https://github.com/sebby-049
-Email: harshahuja320@gmail.com
+Github: https://github.com/sebby-049  
+Email: harshahuja320@gmail.com  
 
 ---
 
