@@ -29,7 +29,7 @@ cd NFSU_DFIS_StudyMaterial
 ```
 ---
 
-## 👨‍💻 Maintainer
+## 👨‍💻 Maintainers
 
 **Neel Varia**  
 GitHub: https://github.com/neelvaria  
